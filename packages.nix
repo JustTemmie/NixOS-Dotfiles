@@ -24,6 +24,7 @@
     spotdl
     streamrip
     htop
+    psmisc
 
     gcc
     rustup
