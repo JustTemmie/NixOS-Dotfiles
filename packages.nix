@@ -23,6 +23,7 @@
 
     gcc
     rustup
+    python313
 
     ly
 
