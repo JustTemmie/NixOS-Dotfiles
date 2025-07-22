@@ -20,6 +20,8 @@
     gnupg
     wireguard-tools
     nmap
+    yt-dlp
+    spotdl
 
     gcc
     rustup
