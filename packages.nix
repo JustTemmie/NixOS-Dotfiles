@@ -33,6 +33,7 @@
     vesktop
     pavucontrol
     protonplus
+    nautilus
   ];
 
   programs.fish.enable = true;
