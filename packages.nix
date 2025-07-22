@@ -19,6 +19,7 @@
     pnpm
     gnupg
     wireguard-tools
+    nmap
 
     gcc
     rustup
