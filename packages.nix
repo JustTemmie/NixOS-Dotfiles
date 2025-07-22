@@ -18,6 +18,7 @@
     nodePackages.nodejs
     pnpm
     gnupg
+    wireguard-tools
 
     gcc
     rustup
@@ -34,6 +35,21 @@
     pavucontrol
     protonplus
     nautilus
+    mpv
+    mission-center
+    typora
+    prismlauncher
+    obs-studio
+    gimp
+    krita
+    inkscape
+    onlyoffice-desktopeditors
+    kdePackages.kdenlive
+    blender
+    tenacity
+    ungoogled-chromium
+    geogebra
+    baobab
   ];
 
   programs.fish.enable = true;
