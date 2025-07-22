@@ -22,6 +22,7 @@
     nmap
     yt-dlp
     spotdl
+    streamrip
 
     gcc
     rustup
