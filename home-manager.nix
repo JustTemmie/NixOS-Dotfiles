@@ -49,6 +49,7 @@ in
       diff-so-fancy.enable = true;
       userEmail = "git@beaver.mom";
       userName = "beaver";
+      signing.signByDefault = true;
 
       extraConfig = {
         commit.gpgsign = true;
