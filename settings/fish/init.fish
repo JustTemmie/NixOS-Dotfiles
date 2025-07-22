@@ -1,3 +1,3 @@
-source /etc/nixos/config-files/fish/aliases.fish
-source /etc/nixos/config-files/fish/environment.fish
-source /etc/nixos/config-files/fish/display.fish
+source /etc/nixos/settings/fish/aliases.fish
+source /etc/nixos/settings/fish/environment.fish
+source /etc/nixos/settings/fish/display.fish
