@@ -25,6 +25,8 @@
     variant = "colemak";
   };
 
+  system.autoUpgrade.enable = true;
+
   nix.gc = {
     automatic = true;
     dates = "weekly";
