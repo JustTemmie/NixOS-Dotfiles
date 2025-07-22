@@ -20,7 +20,6 @@
 
       ./hardware-configuration.nix
   ];
-  networking.hostName = "serenity";
 
   users.users.twig = {
     isNormalUser = true;
