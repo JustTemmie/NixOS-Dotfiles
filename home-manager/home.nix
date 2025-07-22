@@ -13,6 +13,7 @@ in
       ./modules/codium.nix
       ./modules/fish.nix
       ./modules/git.nix
+      ./modules/mpd-discord-rpc.nix
       ./modules/ncmpcpp.nix
       ./modules/ssh.nix
     ];

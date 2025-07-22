@@ -4,7 +4,6 @@
   users.users.twig.packages = with pkgs; [
     mpd
     mpc-cli
-    mpd-discord-rpc
   ];
 
   systemd.services.mpd.environment = {
@@ -40,13 +39,5 @@
         format          "44100:16:1"
       }
     '';
-  };
-
-  systemd.services.mpd-discord-rpc = {
-    enable = true;
-    serviceConfig = {
-      User = "twig";
-      ExecStart = "mpd-discord-rpc";
-    };
   };
 }
