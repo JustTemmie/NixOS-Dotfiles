@@ -23,6 +23,7 @@
     yt-dlp
     spotdl
     streamrip
+    htop
 
     gcc
     rustup
