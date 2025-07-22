@@ -8,4 +8,6 @@
 
   services.geoclue2.enable = true;
   services.geoclue2.enableDemoAgent = false;
+
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 }

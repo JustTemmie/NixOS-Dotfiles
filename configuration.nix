@@ -8,16 +8,12 @@
   nixpkgs.config.allowUnfree = true;
 
   imports = [
-      ./locale.nix
-      ./kernel.nix
-      ./users.nix
-      ./system-packages.nix
+      ./core.nix
+      ./packages.nix
 
-      ./cosmic.nix
-      ./audio.nix
+      ./desktop/cosmic.nix
+      ./desktop/audio.nix
 
-      ./services.nix
-      ./misc.nix
       ./home-manager.nix
 
       ./applications/init.nix
@@ -26,8 +22,21 @@
   ];
   networking.hostName = "serenity";
 
-  fonts.fontDir.enable = true;
-  fonts.fontconfig.useEmbeddedBitmaps = true;
+  users.users.twig = {
+    isNormalUser = true;
+    description = "Miku Hatsune";
+    extraGroups = [ "networkmanager" "wheel" ];
+    
+    uid = 1000;
+
+    shell = pkgs.fish;
+  };
+
+  systemd.tmpfiles.settings."10-nixos-directory"."/etc/nixos".d = {
+    group = "wheel";
+    mode = "0755";
+  };
+
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
