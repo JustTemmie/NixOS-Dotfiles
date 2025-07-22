@@ -18,7 +18,7 @@
 
       ./applications/init.nix
 
-      ./hardware-configuration.nix
+      ./hardware.nix
   ];
 
   users.users.twig = {
