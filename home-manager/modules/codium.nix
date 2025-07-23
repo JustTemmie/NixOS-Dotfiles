@@ -10,6 +10,7 @@
       ritwickdey.liveserver
       rust-lang.rust-analyzer
       llvm-vs-code-extensions.vscode-clangd
+      jnoortheen.nix-ide
       mechatroner.rainbow-csv
       oderwat.indent-rainbow
       pkief.material-icon-theme
