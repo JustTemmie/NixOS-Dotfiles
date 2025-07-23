@@ -27,14 +27,20 @@
 
   swapDevices = [ ];
 
-  # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
-  # (the default) this is the recommended approach. When using systemd-networkd it's
-  # still possible to use this option, but it's recommended to use it in conjunction
-  # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-  networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.enp17s0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.enp19s0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.wlp16s0.useDHCP = lib.mkDefault true;
+  networking = {
+    interfaces.enp17s0 = {
+      ipv4.addresses = [{ 
+        address = "192.168.1.100";
+        prefixLength = 24;
+      }];
+    };
+    defaultGateway = {
+      address = "192.168.1.1";
+      interface = "enp17s0";
+    };
+
+    nameservers = [ "192.168.1.2" "9.9.9.9" ];
+  };
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
