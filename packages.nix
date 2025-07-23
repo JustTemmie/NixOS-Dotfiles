@@ -26,6 +26,7 @@
     htop
     psmisc
     unp # universal unzipper
+    onefetch
 
     gcc
     rustup
