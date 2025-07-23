@@ -36,7 +36,6 @@
 
     godot
     signal-desktop
-    vesktop
     pavucontrol
     protonplus
     nautilus
