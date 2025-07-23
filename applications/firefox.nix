@@ -43,7 +43,7 @@
         # Valid strings for installation_mode are "allowed", "blocked",
         # "force_installed" and "normal_installed".
         ExtensionSettings = {
-          "*".installation_mode = "allow"; # blocks all addons except the ones specified below
+          "*".installation_mode = "allow"; # applies for all other addons
           # uBlock Origin:
           "uBlock0@raymondhill.net" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
@@ -64,43 +64,39 @@
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi";
             installation_mode = "force_installed";
           };
-	  # Enhancer for youtube
+          # Enhancer for youtube
           "enhancerforyoutube@maximerf.addons.mozilla.org" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/enhancer-for-youtube/latest.xpi";
             installation_mode = "force_installed";
           };
-	  # Dearrow
+          # Dearrow
           "deArrow@ajay.app" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/dearrow/latest.xpi";
             installation_mode = "force_installed";
           };
-	  # Sponsorblock
+          # Sponsorblock
           "sponsorBlocker@ajay.app" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/sponsorblock/latest.xpi";
             installation_mode = "force_installed";
           };
-	  # Return Youtube Dislike
+          # Return Youtube Dislike
           "{762f9885-5a13-4abd-9c77-433dcd38b8fd}" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/return-youtube-dislikes/latest.xpi";
             installation_mode = "force_installed";
           };
-	  # SteamDB
+          # SteamDB
           "firefox-extension@steamdb.info" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/steam-database/latest.xpi";
             installation_mode = "force_installed";
           };
 
 
-
-	  # Temmie's theme
+          # Temmie's theme
           "{92976180-e90e-46e6-9dd9-546ef0eb3342}" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/temmie-s-theme/latest.xpi";
             installation_mode = "force_installed";
           };
-
-
         };
-  
         /* ---- PREFERENCES ---- */
         # Check about:config for options.
         Preferences = { 
@@ -112,12 +108,8 @@
           "browser.download.dir" = "/home/twig";
 
           "extensions.pocket.enabled" = lock-false;
-          #"extensions.screenshots.disabled" = lock-true;
           "browser.topsites.contile.enabled" = lock-false;
-          #"browser.formfill.enable" = lock-false;
-          #"browser.search.suggest.enabled" = lock-false;
           "browser.search.suggest.enabled.private" = lock-false;
-          #"browser.urlbar.suggest.searches" = lock-false;
           "browser.urlbar.showSearchSuggestionsFirst" = lock-false;
           "browser.newtabpage.activity-stream.feeds.section.topstories" = lock-false;
           "browser.newtabpage.activity-stream.feeds.snippets" = lock-false;
