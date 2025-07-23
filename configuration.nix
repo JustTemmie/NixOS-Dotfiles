@@ -12,6 +12,7 @@
       ./packages.nix
 
       ./desktop/cosmic.nix
+      ./desktop/ly.nix
       ./desktop/audio.nix
 
       ./home-manager/home.nix
