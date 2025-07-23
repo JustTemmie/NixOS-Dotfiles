@@ -50,9 +50,9 @@
         CallTimer.enabled = true;
         ClearURLs.enabled = true;
         ConsoleJanitor.enabled = true;
-        CopyEmojiMMarkdown.enabled = true;
-        copyFileContents.enabled = true;
-        copyUserURLs.enabled = true;
+        CopyEmojiarkdown.enabled = true;
+        CopyFileContents.enabled = true;
+        CopyUserURLs.enabled = true;
         crashHandler.enabled = true;
         Dearrow.enabled = true;
         Decor.enabled = true;
@@ -77,8 +77,10 @@
           enabled = true;
           applyColorOnlyToUsersWithoutColor = true;
         };
+        KeepCurrentChannel.enabled = true;
         LoadingQuotes.enabled = true;
         MentionAvatars.enabled = true;
+        MessageLatency.enabled = true;
         MessageLogger = {
           enabled = true;
           ignoreUsers = [ 870019731527204875 ];
