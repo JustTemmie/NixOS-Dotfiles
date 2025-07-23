@@ -100,7 +100,11 @@
         PermissionViewer.enabled = true;
         petpet.enabled = true;
         PictureInPicture.enabled = true;
-        PlatformIndicators.enabled = true;
+        PlatformIndicators = {
+          enabled = true;
+          list = false;
+          messages = false;
+        };
         QuickReply.enabled = true;
         RelationshipNotifier.enabled = true;
         ReplyTimestamp.enabled = true;
