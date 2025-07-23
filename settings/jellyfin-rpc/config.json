@@ -1,0 +1,20 @@
+{
+  "jellyfin": {
+    "url": "http://192.168.1.22:8096",
+    "api_key": "/etc/nixos/private/jellyfin-api-key",
+    "username": "Temmie"
+  },
+  "discord": {
+    "buttons": [{
+        "name": "dynamic",
+        "url": "dynamic"
+    }]
+  },
+  "imgur": {
+    "client_id": "/etc/nixos/private/imgur-client-id"
+  },
+  "images": {
+    "enable_images": true,
+    "imgur_images": true
+  }
+}

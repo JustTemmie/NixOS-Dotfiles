@@ -67,6 +67,8 @@
     packagesMisc = with pkgs; [
       ly
 
+      jellyfin-rpc
+
       nerd-fonts.fira-code
     ];
   in
