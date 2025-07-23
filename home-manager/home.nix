@@ -14,8 +14,8 @@ in
       ./modules/fish.nix
       ./modules/git.nix
       ./modules/kitty.nix
-      ./modules/mpd.nix
       ./modules/mpd-discord-rpc.nix
+      ./modules/mpd.nix
       ./modules/ncmpcpp.nix
       ./modules/ssh.nix
       ./modules/vesktop.nix

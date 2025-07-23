@@ -7,17 +7,17 @@
       ffmpeg
       hyfetch
       fastfetch
+      onefetch
       nodePackages.nodejs
       pnpm
       gnupg
-      wireguard-tools
+      psmisc
       nmap
+      wireguard-tools
       yt-dlp
       spotdl
       streamrip
-      psmisc
       unp # universal unzipper
-      onefetch
     ];
 
     packagesTerminalUI = with pkgs; [
@@ -27,26 +27,26 @@
     ];
 
     packagesGraphical = with pkgs; [
-      godot
-      signal-desktop
-      pavucontrol
-      protonplus
-      nautilus
-      mpv
-      mission-center
+      onlyoffice-desktopeditors
       typora
-      prismlauncher
-      obs-studio
+      geogebra
+      godot
+      blender
+      tenacity
       gimp
       krita
       inkscape
-      onlyoffice-desktopeditors
-      kdePackages.kdenlive
-      blender
-      tenacity
+      pavucontrol
+      protonplus
       ungoogled-chromium
-      geogebra
+      kdePackages.kdenlive
       baobab
+      nautilus
+      mission-center
+      signal-desktop
+      prismlauncher
+      obs-studio
+      mpv
     ];
 
     packagesCompilersAndInterpreters = with pkgs; [
