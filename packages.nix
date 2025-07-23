@@ -33,9 +33,7 @@
     ly
 
     nerd-fonts.fira-code
-    nerd-fonts.droid-sans-mono
 
-    kitty
     godot
     signal-desktop
     vesktop
