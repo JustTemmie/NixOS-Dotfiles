@@ -1,5 +1,9 @@
+{ modulesPath, ... }:
+
 {
   imports = [
+    (modulesPath + "/installer/scan/not-detected.nix")
+
     ./desktop/desktop.nix
     ./desktop/samba.nix
   ];
