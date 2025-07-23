@@ -72,7 +72,10 @@
         FullUserInChatbox.enabled = true;
         GameActivityToggle.enabled = true;
         IgnoreActivities.enabled = true;
-        ImageZoom.enabled = true;
+        ImageZoom = {
+          enabled = true;
+          size = 700;
+        };
         IrcColors = {
           enabled = true;
           applyColorOnlyToUsersWithoutColor = true;
