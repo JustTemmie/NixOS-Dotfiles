@@ -14,8 +14,6 @@
     ];
   in
 {
-  environment.systemPackages = [ pkgs.cifs-utils ];
-
   fileSystems."/home/twig/Documents" = {
     device = "//192.168.1.20/Documents";
     fsType = "cifs";

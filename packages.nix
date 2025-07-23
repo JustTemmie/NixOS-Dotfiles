@@ -1,64 +1,82 @@
 { config, pkgs, ... }:
 
+  let
+    packagesCommandline = with pkgs; [
+      wget
+      curl
+      ffmpeg
+      hyfetch
+      fastfetch
+      nodePackages.nodejs
+      pnpm
+      gnupg
+      wireguard-tools
+      nmap
+      yt-dlp
+      spotdl
+      streamrip
+      psmisc
+      unp # universal unzipper
+      onefetch
+    ];
+
+    packagesTerminalUI = with pkgs; [
+      neovim
+      nano
+      htop
+    ];
+
+    packagesGraphical = with pkgs; [
+      godot
+      signal-desktop
+      pavucontrol
+      protonplus
+      nautilus
+      mpv
+      mission-center
+      typora
+      prismlauncher
+      obs-studio
+      gimp
+      krita
+      inkscape
+      onlyoffice-desktopeditors
+      kdePackages.kdenlive
+      blender
+      tenacity
+      ungoogled-chromium
+      geogebra
+      baobab
+    ];
+
+    packagesCompilersAndInterpreters = with pkgs; [
+      gcc
+      rustup
+      python313
+    ];
+
+    packagesNix = with pkgs; [
+      nix-index
+    ];
+
+    packagesSystem = with pkgs; [
+      btrfs-progs
+      cifs-utils
+    ];
+
+    packagesMisc = with pkgs; [
+      ly
+
+      nerd-fonts.fira-code
+    ];
+  in
 {
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    nix-index
-
-    neovim
-    nano
-
-    wget
-    curl
-    btrfs-progs
-    ffmpeg
-    hyfetch
-    fastfetch
-    nodePackages.nodejs
-    pnpm
-    gnupg
-    wireguard-tools
-    nmap
-    yt-dlp
-    spotdl
-    streamrip
-    htop
-    psmisc
-    unp # universal unzipper
-    onefetch
-
-    gcc
-    rustup
-    python313
-
-    ly
-
-    nerd-fonts.fira-code
-
-    godot
-    signal-desktop
-    pavucontrol
-    protonplus
-    nautilus
-    mpv
-    mission-center
-    typora
-    prismlauncher
-    obs-studio
-    gimp
-    krita
-    inkscape
-    onlyoffice-desktopeditors
-    kdePackages.kdenlive
-    blender
-    tenacity
-    ungoogled-chromium
-    geogebra
-    baobab
-  ];
-
-  programs.fish.enable = true;
-  programs.nix-ld.enable = true;
+  environment.systemPackages =
+    packagesCommandline ++
+    packagesTerminalUI ++
+    packagesGraphical ++
+    packagesCompilersAndInterpreters ++
+    packagesNix ++
+    packagesSystem ++
+    packagesMisc;
 }
-
