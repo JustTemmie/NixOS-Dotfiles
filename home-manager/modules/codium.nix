@@ -34,7 +34,7 @@
       "git-graph.repository.commits.showSignatureStatus" = true;
       "git.blame.editorDecoration.enabled" = true;
       # "terminal.integrated.shellIntegration.enabled" = true;
-      "terminal.integrated.stickyScroll.enabled" = true;
+      # "terminal.integrated.stickyScroll.enabled" = true;
       "workbench.colorTheme" = "Material Theme Darker High Contrast";
       "workbench.iconTheme" = "material-icon-theme";
     };
