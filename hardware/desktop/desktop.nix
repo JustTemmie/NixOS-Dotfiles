@@ -6,8 +6,6 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
-  networking.hostName = "the-cube";
-
   fileSystems."/" = {
       device = "/dev/disk/by-uuid/af235f11-af74-47f4-b147-541d58bb70c5";
       fsType = "xfs";

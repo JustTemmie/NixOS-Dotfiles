@@ -13,8 +13,6 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
-  networking.hostName = "serenity";
-
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/22955259-b5ed-4d29-a6aa-551978b32ec5";
       fsType = "btrfs";
