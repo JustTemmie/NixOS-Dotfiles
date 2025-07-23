@@ -15,7 +15,6 @@
       ./desktop/audio.nix
 
       ./home-manager/home.nix
-
       ./applications/init.nix
 
       ./hardware.nix
