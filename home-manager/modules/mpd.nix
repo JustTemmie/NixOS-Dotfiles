@@ -1,22 +1,14 @@
 { config, pkgs, ... }:
 
 {
-  users.users.twig.packages = with pkgs; [
-    mpd
-    mpc-cli
-  ];
-
-  systemd.services.mpd.environment = {
-    # https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/609
-    XDG_RUNTIME_DIR = "/run/user/1000";
-  };
+  home.packages = [ pkgs.mpc ];
 
   services.mpd = {
     enable = true;
-    musicDirectory = "/home/twig/Music";
-    user = "twig";
-    network.listenAddress = "any";
-    startWhenNeeded = true;
+    musicDirectory = "~/Music";
+    playlistDirectory = "/home/twig/Music/PlaylistsMPD";
+    
+    network.startWhenNeeded = true;
 
     extraConfig = ''
       audio_output {
