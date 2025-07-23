@@ -25,6 +25,7 @@
     streamrip
     htop
     psmisc
+    unp # universal unzipper
 
     gcc
     rustup
