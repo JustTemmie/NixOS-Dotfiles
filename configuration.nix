@@ -34,4 +34,17 @@
     group = "wheel";
     mode = "0755";
   };
+
+  services.xserver.xkb = {
+    layout = "us";
+    variant = "colemak";
+  };
+
+  system.autoUpgrade.enable = true;
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
+  };
 }
