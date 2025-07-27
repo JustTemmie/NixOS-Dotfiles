@@ -18,7 +18,7 @@ in
       ./modules/mpd.nix
       ./modules/ncmpcpp.nix
       ./modules/ssh.nix
-      ./modules/vesktop.nix
+#      ./modules/vesktop.nix
     ];
 
     # The state version is required

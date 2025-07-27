@@ -47,6 +47,7 @@
       prismlauncher
       obs-studio
       mpv
+      vesktop
     ];
 
     packagesCompilersAndInterpreters = with pkgs; [
