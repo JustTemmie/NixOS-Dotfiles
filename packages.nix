@@ -18,6 +18,7 @@
       spotdl
       streamrip
       unp # universal unzipper
+      lshw
     ];
 
     packagesTerminalUI = with pkgs; [

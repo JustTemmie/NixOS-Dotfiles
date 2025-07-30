@@ -9,6 +9,7 @@
       vue.volar
       ritwickdey.liveserver
       rust-lang.rust-analyzer
+      tamasfe.even-better-toml
       llvm-vs-code-extensions.vscode-clangd
       jnoortheen.nix-ide
       mechatroner.rainbow-csv

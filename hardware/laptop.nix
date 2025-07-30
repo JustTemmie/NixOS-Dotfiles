@@ -5,6 +5,7 @@
     (modulesPath + "/installer/scan/not-detected.nix")
 
     ./laptop/laptop.nix
+    ./laptop/graphics.nix
   ];
 
   networking.hostName = "serenity";
