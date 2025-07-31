@@ -49,6 +49,7 @@
       obs-studio
       mpv
       vesktop
+      imv
     ];
 
     packagesCompilersAndInterpreters = with pkgs; [
