@@ -23,7 +23,7 @@
 
   users.users.twig = {
     isNormalUser = true;
-    description = "Miku Hatsune";
+    description = "Hatsune Miku";
     extraGroups = [ "networkmanager" "wheel" ];
     
     uid = 1000;
