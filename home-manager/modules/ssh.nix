@@ -2,7 +2,7 @@
   programs.ssh = {
     enable = true;
     extraConfig = ''
-      identityFile = "~/.ssh/id_ed25519"
+      identityFile "~/.ssh/id_ed25519"
 
       Host hetzner skibidi
         HostName hetzner.beaver.mom
