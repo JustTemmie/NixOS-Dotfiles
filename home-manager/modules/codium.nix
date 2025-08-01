@@ -6,13 +6,12 @@
     package = pkgs.vscodium.fhs;
     profiles.default.extensions = with pkgs.vscode-extensions; [
       ms-python.python
-      magicstack.magicpython
       vue.volar
       ritwickdey.liveserver
       rust-lang.rust-analyzer
       tamasfe.even-better-toml
       llvm-vs-code-extensions.vscode-clangd
-      jnoortheen.nix-ide
+      bbenoist.nix
       mechatroner.rainbow-csv
       oderwat.indent-rainbow
       pkief.material-icon-theme
@@ -26,9 +25,9 @@
           "when" = "editorFocus";
         }
         {
-            "key" = "ctrl+d";
-            "command" = "editor.action.copyLinesDownAction";
-            "when" = "editorTextFocus && !editorReadonly";
+          "key" = "ctrl+d";
+          "command" = "editor.action.copyLinesDownAction";
+          "when" = "editorTextFocus && !editorReadonly";
         }
       ];
 
