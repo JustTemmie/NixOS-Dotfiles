@@ -21,12 +21,12 @@ function fish_prompt
                 if test $total_seconds -ge 3600
                     set -l hours (math "$total_seconds / 3600")
                     set -l minutes (math "($total_seconds % 3600) / 60")
-                    set -l seconds (math "$total_seconds % 60")
-                    set time_str "($hours:"(string format '%02d' $minutes)":"(string format '%02d' $seconds)") "
+                    set -l seconds (math "$total_seconds %60")
+                    set time_str "($hours:"(printf '%02d' $minutes)":"(printf '%02d' $seconds)") "
                 else if test $total_seconds -ge 60
                     set -l minutes (math "$total_seconds / 60")
                     set -l seconds (math "$total_seconds % 60")
-                    set time_str "($minutes:"(string format '%02d' $seconds)") "
+                    set time_str "($minutes:"(printf '%02d' $seconds)") "
                 else
                     set time_str "($total_seconds) "
                 end
