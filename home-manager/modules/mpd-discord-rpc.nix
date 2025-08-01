@@ -1,6 +1,4 @@
-{ config, pkgs, ... }:
-
-{
+{ config, pkgs, ... }: {
   services.mpd-discord-rpc = {
     enable = true;
     settings = {

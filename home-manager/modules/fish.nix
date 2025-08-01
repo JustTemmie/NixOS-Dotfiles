@@ -1,6 +1,4 @@
-{ config, pkgs, ... }:
-
-{
+{ config, pkgs, ... }: {
   home.shell.enableFishIntegration = true;
 
   programs.fish = {
