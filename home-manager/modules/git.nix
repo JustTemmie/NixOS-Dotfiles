@@ -7,6 +7,7 @@
     userName = "Temmie";
 
     extraConfig = {
+      push.autoSetupRemove = true;
       init.defaultBranch = "main";
       commit.gpgsign = true;
       gpg.format = "ssh";
