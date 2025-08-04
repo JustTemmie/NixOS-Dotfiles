@@ -19,6 +19,7 @@
       streamrip
       unp # universal unzipper
       lshw
+      pciutils
     ];
 
     packagesTerminalUI = with pkgs; [

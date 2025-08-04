@@ -1,8 +1,16 @@
 { config, pkgs, ... }: {
+  home.activation = {
+    ssh-permissions = ''
+      chmod 700 /home/twig/.ssh
+      chmod 600 /home/twig/.ssh/id_ed25519
+      chmod 644 /home/twig/.ssh/id_ed25519.pub
+    '';
+  };
+
   programs.ssh = {
     enable = true;
     extraConfig = ''
-      identityFile "~/.ssh/id_ed25519"
+      identityFile ~/.ssh/id_ed25519
 
       Host hetzner skibidi
         HostName hetzner.beaver.mom
