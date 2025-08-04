@@ -5,10 +5,16 @@
   programs = {
     gamescope = {
       enable = true;
-      capSysNice = true;
+#      capSysNice = true;
     };
     steam = {
+      enable = true;
+      gamescopeSession.enable = true;
+
       package = pkgs.steam.override {
+        extraLibraries = pkgs: [
+          pkgs.xorg.libxcb
+        ];
         extraPkgs = pkgs': with pkgs'; [
           xorg.libXcursor
           xorg.libXi
@@ -21,12 +27,9 @@
           libkrb5
           keyutils
           libei
-          gamescope
         ];
       };
 
-      enable = true;
-      gamescopeSession.enable = true;
       extraCompatPackages = with pkgs; [
         proton-ge-bin
       ];
