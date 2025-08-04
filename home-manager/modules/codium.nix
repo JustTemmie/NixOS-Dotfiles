@@ -46,9 +46,7 @@
         "git-graph.repository.sign.tags" = true;
         "git-graph.repository.commits.showSignatureStatus" = true;
         "git.blame.editorDecoration.enabled" = true;
-        # "terminal.integrated.shellIntegration.enabled" = true;
-        # "terminal.integrated.stickyScroll.enabled" = true;
-        "workbench.colorTheme" = "Material Theme Darker High Contrast";
+        "workbench.colorTheme": "Maple Dark";
         "workbench.iconTheme" = "material-icon-theme";
       };
     };
