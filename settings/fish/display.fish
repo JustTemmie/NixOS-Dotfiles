@@ -17,14 +17,14 @@ function fish_prompt
         set -l time_str
         if set -q CMD_DURATION
             if test $CMD_DURATION -gt 5000
-                set -l total_seconds (math "floor($CMD_DURATION / 1000)")
+                set -l total_seconds (math -s 0 "$CMD_DURATION / 1000")
                 if test $total_seconds -ge 3600
-                    set -l hours (math "$total_seconds / 3600")
-                    set -l minutes (math "($total_seconds % 3600) / 60")
-                    set -l seconds (math "$total_seconds %60")
+                    set -l hours (math -s 0 "$total_seconds / 3600")
+                    set -l minutes (math -s 0 "($total_seconds % 3600) / 60")
+                    set -l seconds (math "$total_seconds % 60")
                     set time_str "($hours:"(printf '%02d' $minutes)":"(printf '%02d' $seconds)") "
                 else if test $total_seconds -ge 60
-                    set -l minutes (math "$total_seconds / 60")
+                    set -l minutes (math -s 0 "$total_seconds / 60")
                     set -l seconds (math "$total_seconds % 60")
                     set time_str "($minutes:"(printf '%02d' $seconds)") "
                 else
