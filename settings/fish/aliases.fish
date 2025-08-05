@@ -1,4 +1,3 @@
-alias archbox="distrobox enter archbox"
 alias torsk="echo '><((((°>'"
 alias py="./venv/bin/python"
 alias doas="sudo"
