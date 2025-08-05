@@ -3,6 +3,8 @@ alias torsk="echo '><((((°>'"
 alias py="./venv/bin/python"
 alias doas="sudo"
 
+abbr --add nr sudo nixos-rebuild
+
 function gccr
 	if test (count $argv) -gt 0
 		set gccr_file $argv[1]
