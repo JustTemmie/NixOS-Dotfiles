@@ -57,6 +57,9 @@
       gcc
       rustup
       python313
+      libglvnd
+      libglibutil
+      typescript
     ];
 
     packagesNix = with pkgs; [
