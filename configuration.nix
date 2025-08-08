@@ -8,6 +8,7 @@
   imports = [
       ./core.nix
       ./packages.nix
+      ./toolkits.nix
 
       ./desktop/cosmic.nix
       ./desktop/audio.nix
