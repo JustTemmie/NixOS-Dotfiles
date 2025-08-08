@@ -11,6 +11,7 @@
 
       ./desktop/cosmic.nix
       ./desktop/audio.nix
+      ./desktop/niri.nix
 
       ./home-manager/home.nix
       ./applications/init.nix
