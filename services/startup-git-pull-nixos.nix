@@ -5,7 +5,7 @@
     serviceConfig = {
       Type = "oneshot";
       WorkingDirectory = "/etc/nixos";
-      ExecStart = "/usr/bin/git -C /etc/nixos pull";
+      ExecStart = "git -C /etc/nixos pull";
     };
 
     wantedBy = [ "multi-user.target" ];
