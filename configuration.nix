@@ -10,6 +10,7 @@
       ./environment/init.nix
       ./hardware/init.nix
       ./home-manager/init.nix
+      ./services/init.nix
   ];
 
   systemd.tmpfiles.settings."10-nixos-directory"."/etc/nixos".d = {
