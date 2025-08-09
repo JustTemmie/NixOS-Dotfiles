@@ -89,6 +89,11 @@
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/steam-database/latest.xpi";
             installation_mode = "force_installed";
           };
+          # Tamper monkey
+#          "uBlock0@raymondhill.net" = {
+#            install_url = "https://addons.mozilla.org/firefox/downloads/latest/tampermonkey/latest.xpi";
+#            installation_mode = "force_installed";
+#          };
 
 
           # Temmie's theme
