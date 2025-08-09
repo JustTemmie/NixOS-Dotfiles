@@ -57,6 +57,8 @@
       gcc
       rustup
       python313
+      python313Packages.jedi      
+
       libglvnd
       libglibutil
       typescript
