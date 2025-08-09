@@ -20,6 +20,7 @@
       unp # universal unzipper
       lshw
       pciutils
+      git
     ];
 
     packagesTerminalUI = with pkgs; [
