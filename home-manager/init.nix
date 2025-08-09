@@ -5,7 +5,8 @@
   in
 {
   imports = [
-      (import "${home-manager}/nixos")
+    (import "${home-manager}/nixos")
+    ./users.nix
   ];
 
   home-manager.users.twig = { pkgs, ... }: {

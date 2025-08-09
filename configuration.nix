@@ -6,37 +6,33 @@
   nixpkgs.config.allowUnfree = true;
 
   imports = [
-      ./core.nix
-      ./packages.nix
-
-      ./desktop/cosmic.nix
-      ./desktop/audio.nix
-
-      ./home-manager/home.nix
       ./applications/init.nix
-
-      ./hardware.nix
+      ./environment/init.nix
+      ./hardware/init.nix
+      ./home-manager/init.nix
   ];
-
-  users.users.twig = {
-    isNormalUser = true;
-    description = "Hatsune Miku";
-    extraGroups = [ "networkmanager" "wheel" ];
-    
-    uid = 1000;
-
-    shell = pkgs.fish;
-  };
 
   systemd.tmpfiles.settings."10-nixos-directory"."/etc/nixos".d = {
     group = "wheel";
     mode = "0755";
   };
 
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "colemak";
-  };
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  # use latest kernel by default
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  programs.fish.enable = true;
+  programs.nix-ld.enable = true; # enable system support for unpatched binaries
+  networking.networkmanager.enable = true;
+  services.libinput.enable = true;
+
+  fonts.fontDir.enable = true;
+  fonts.fontconfig.useEmbeddedBitmaps = true;
+
+  time.timeZone = "Europe/Oslo";
+  i18n.defaultLocale = "en_GB.UTF-8";
 
   system.autoUpgrade.enable = true;
 

@@ -1,5 +1,5 @@
 private/*
-
-hardware-configuration.nix
-hardware.nix
 result
+
+hardware/init.nix
+hardware.nix
