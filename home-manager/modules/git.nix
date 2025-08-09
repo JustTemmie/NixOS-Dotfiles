@@ -13,6 +13,7 @@
 
     extraConfig = {
       push.autoSetupRemove = true;
+      branch.autoSetupMerge = true;
       init.defaultBranch = "main";
       commit.gpgsign = true;
       gpg.format = "ssh";
