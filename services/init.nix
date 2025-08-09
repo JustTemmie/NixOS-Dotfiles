@@ -1,5 +1,5 @@
 {
   imports = [
-    ./startup-git-pull-nixos.nix
+#    ./startup-git-pull-nixos.nix
   ];
 }
