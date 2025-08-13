@@ -1,4 +1,9 @@
-{ config, pkgs, ... }: {
+{ config, lib, pkgs, ... }:
+
+  let
+    hostname = builtins.getEnv "HOSTNAME";
+  in
+{
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium.fhs;
@@ -13,7 +18,8 @@
       mechatroner.rainbow-csv
       oderwat.indent-rainbow
       pkief.material-icon-theme
-    ];
+    ] ++ lib.optional (hostname == "the-cube") continue.continue;
+
 
     profiles.default = {
       keybindings = [
