@@ -4,6 +4,8 @@
 
     ./desktop/desktop.nix
     ./desktop/samba.nix
+    ./desktop/gpu.nix
+    ./desktop/ollama.nix
   ];
 
   networking.hostName = "the-cube";
