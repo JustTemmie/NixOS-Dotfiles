@@ -1,7 +1,6 @@
 { config, pkgs, ... }: {
-  environment.systemPackages = [
-    (pkgs.ollama.override {
-      acceleration = "rocm";
-    })
-  ];
+  services.ollama = {
+    enable = true;
+    acceleration = "rocm";
+  };
 }
