@@ -51,7 +51,6 @@
       mpv
       vesktop
       imv
-      piper
     ];
 
     packagesCompilersAndInterpreters = with pkgs; [
