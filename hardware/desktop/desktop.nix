@@ -30,12 +30,6 @@
         prefixLength = 24;
       }];
     };
-    interfaces.enp17s0 = {
-      ipv4.addresses = [{ 
-        address = "192.168.1.101";
-        prefixLength = 24;
-      }];
-    };
     defaultGateway = {
       address = "192.168.1.1";
       interface = "enp19s0";
