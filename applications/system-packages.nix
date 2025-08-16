@@ -27,6 +27,7 @@
       neovim
       nano
       htop
+      glow
     ];
 
     packagesGraphical = with pkgs; [
