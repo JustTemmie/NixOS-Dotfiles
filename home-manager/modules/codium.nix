@@ -18,6 +18,7 @@
       mechatroner.rainbow-csv
       oderwat.indent-rainbow
       pkief.material-icon-theme
+      tauri-apps.tauri-vscode
     ] ++ lib.optional (hostname == "the-cube") continue.continue;
 
 

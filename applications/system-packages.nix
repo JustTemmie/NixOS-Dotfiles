@@ -21,6 +21,7 @@
       lshw
       pciutils
       usbutils
+      xdg-utils
     ];
 
     packagesTerminalUI = with pkgs; [
