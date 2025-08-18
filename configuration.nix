@@ -27,6 +27,7 @@
   programs.fish.enable = true;
   programs.nix-ld.enable = true; # enable system support for unpatched binaries
   networking.networkmanager.enable = true;
+  networking.firewall.enable = false;
   services.libinput.enable = true;
 
   fonts.fontDir.enable = true;
