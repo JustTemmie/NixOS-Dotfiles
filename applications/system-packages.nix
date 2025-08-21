@@ -22,6 +22,7 @@
       pciutils
       usbutils
       xdg-utils
+      tree
     ];
 
     packagesTerminalUI = with pkgs; [
