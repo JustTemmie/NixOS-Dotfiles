@@ -15,7 +15,7 @@
       ./modules/fish.nix
       ./modules/git.nix
       ./modules/kitty.nix
-      ./modules/mpd-discord-rpc.nix
+#      ./modules/mpd-discord-rpc.nix
       ./modules/mpd.nix
       ./modules/ncmpcpp.nix
       ./modules/ssh.nix

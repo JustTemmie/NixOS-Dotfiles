@@ -58,9 +58,6 @@
     ];
 
     packagesCompilersAndInterpreters = with pkgs; [
-      gcc
-      clang
-
       libglvnd
       libglibutil
       typescript
