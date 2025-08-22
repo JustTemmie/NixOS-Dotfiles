@@ -1,25 +1,24 @@
-{ config, lib, pkgs, ... }:
-
-  let
-    hostname = builtins.getEnv "HOSTNAME";
-  in
-{
+{ config, lib, pkgs, ... }: {
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium.fhs;
     profiles.default.extensions = with pkgs.vscode-extensions; [
-      ms-python.python
-      vue.volar
-      ritwickdey.liveserver
-      rust-lang.rust-analyzer
-      tamasfe.even-better-toml
-      llvm-vs-code-extensions.vscode-clangd
-      bbenoist.nix
-      mechatroner.rainbow-csv
-      oderwat.indent-rainbow
       pkief.material-icon-theme
+      vue.volar
+      llvm-vs-code-extensions.vscode-clangd
+      leonardssh.vscord
+      tamasfe.even-better-toml
+      oderwat.indent-rainbow
+      ritwickdey.liveserver
+        # magicstack.magicpython
+	# subframe7536.theme-maple
+      jnoortheen.nix-ide
+      ms-python.python
+      mechatroner.rainbow-csv
+      rust-lang.rust-analyzer
       tauri-apps.tauri-vscode
-    ] ++ lib.optional (hostname == "the-cube") continue.continue;
+      tomoki1207.pdf
+    ];
 
 
     profiles.default = {
