@@ -3,7 +3,7 @@
     enable = true;
     diff-so-fancy.enable = true;
     userEmail = "git@beaver.mom";
-    userName = "Temmie";
+    userName = "Twig";
 
     signing = {
       signByDefault = true;
