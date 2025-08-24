@@ -53,7 +53,6 @@
       signal-desktop
       prismlauncher
       obs-studio
-      mpv
       vesktop
       imv
     ];
