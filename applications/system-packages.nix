@@ -8,8 +8,6 @@
       hyfetch
       fastfetch
       onefetch
-      nodePackages.nodejs
-      pnpm
       gnupg
       psmisc
       nmap
@@ -23,6 +21,7 @@
       xdg-utils
       tree
       imagemagick
+      pigz
     ];
 
     packagesTerminalUI = with pkgs; [
@@ -60,6 +59,8 @@
       libglvnd
       libglibutil
       typescript
+      nodePackages.nodejs
+      pnpm
     ];
 
     packagesNix = with pkgs; [
