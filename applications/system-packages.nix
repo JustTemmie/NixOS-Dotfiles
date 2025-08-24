@@ -16,7 +16,6 @@
       wireguard-tools
       yt-dlp
       spotdl
-      streamrip
       unp # universal unzipper
       lshw
       pciutils
