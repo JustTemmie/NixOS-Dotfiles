@@ -23,6 +23,7 @@
       usbutils
       xdg-utils
       tree
+      imagemagick
     ];
 
     packagesTerminalUI = with pkgs; [
