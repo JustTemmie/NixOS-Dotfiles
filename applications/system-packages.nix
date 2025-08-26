@@ -2,33 +2,32 @@
 
   let
     packagesCommandline = with pkgs; [
+      unp # universal unzipper
       wget
       curl
-      ffmpeg
       hyfetch
       fastfetch
       onefetch
+      yt-dlp
+      ffmpeg
+      imagemagick
       gnupg
       psmisc
       nmap
       wireguard-tools
-      yt-dlp
-      spotdl
-      unp # universal unzipper
       lshw
       pciutils
       usbutils
       xdg-utils
-      tree
-      imagemagick
       pigz
+      tree
     ];
 
     packagesTerminalUI = with pkgs; [
       neovim
       nano
       htop
-      glow
+      glow # markdown viewer
     ];
 
     packagesGraphical = with pkgs; [
@@ -74,8 +73,6 @@
 
     packagesMisc = with pkgs; [
       ly
-
-      jellyfin-rpc
 
       nerd-fonts.fira-code
     ];
