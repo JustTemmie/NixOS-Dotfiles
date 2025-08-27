@@ -3,9 +3,10 @@
     (modulesPath + "/installer/scan/not-detected.nix")
 
     ./desktop/desktop.nix
-    ./desktop/samba.nix
     ./desktop/gpu.nix
+    # ./desktop/lowLatencyJack.nix disabled for now
     ./desktop/ollama.nix
+    ./desktop/samba.nix
   ];
 
   networking.hostName = "the-cube";

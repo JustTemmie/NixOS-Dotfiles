@@ -4,6 +4,10 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+  powerManagement.cpuFreqGovernor = "performance";
+  hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+
   fileSystems."/" = {
       device = "/dev/disk/by-uuid/af235f11-af74-47f4-b147-541d58bb70c5";
       fsType = "xfs";
@@ -19,7 +23,6 @@
       device = "/dev/disk/by-uuid/300fac90-e065-4666-99f8-c5c6b24b6823";
       fsType = "btrfs";
   };
-   
 
   swapDevices = [ ];
 
@@ -37,7 +40,4 @@
 
     nameservers = [ "192.168.1.2" "9.9.9.9" ];
   };
-
-  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
