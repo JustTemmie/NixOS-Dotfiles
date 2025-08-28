@@ -4,7 +4,6 @@
 
     ./desktop/desktop.nix
     ./desktop/gpu.nix
-    # ./desktop/lowLatencyJack.nix disabled for now
     ./desktop/ollama.nix
     ./desktop/samba.nix
   ];
