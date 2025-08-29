@@ -35,7 +35,7 @@
     };
     defaultGateway = {
       address = "192.168.1.1";
-      interface = "enp19s0";
+      interface = "enp17s0";
     };
 
     nameservers = [ "192.168.1.2" "9.9.9.9" ];
