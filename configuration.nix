@@ -4,9 +4,9 @@
 
 { config, pkgs, ... }: {
   nixpkgs.config.allowUnfree = true;
-  nix.package = pkgs.lixPackageSets.stable.lix;
 
   imports = [
+      ./lix.nix
       ./applications/init.nix
       ./environment/init.nix
       ./hardware/init.nix
