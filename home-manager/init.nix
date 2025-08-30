@@ -18,6 +18,7 @@
       ./modules/mpd-discord-rpc.nix
       ./modules/mpd.nix
       ./modules/ncmpcpp.nix
+#      ./modules/rmpc.nix disabled until rmpc 0.9 is a nix pkg, maybe i should actually try flakes!??! 
       ./modules/ssh.nix
     ];
 
