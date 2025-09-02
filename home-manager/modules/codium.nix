@@ -1,3 +1,4 @@
+# i really need to fix my plugins
 { config, lib, pkgs, ... }: {
   programs.vscode = {
     enable = true;
@@ -15,6 +16,7 @@
 	# subframe7536.theme-maple
       jnoortheen.nix-ide
       ms-python.python
+#      13xforever.language-x86-64-assembly
       mechatroner.rainbow-csv
       rust-lang.rust-analyzer
       tauri-apps.tauri-vscode
