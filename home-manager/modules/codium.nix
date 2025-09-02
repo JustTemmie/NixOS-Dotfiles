@@ -1,15 +1,16 @@
 { config, lib, pkgs, ... }: {
   programs.vscode = {
     enable = true;
-    package = pkgs.vscodium.fhs;
+    # does this work? do i have 2 gccs? who knows!
+    package = pkgs.vscodium.fhsWithPackages (ps: with ps; [ ccls pkg-config ]);
     profiles.default.extensions = with pkgs.vscode-extensions; [
       pkief.material-icon-theme
       vue.volar
-      llvm-vs-code-extensions.vscode-clangd
       leonardssh.vscord
       tamasfe.even-better-toml
       oderwat.indent-rainbow
       ritwickdey.liveserver
+#      ccls-project.ccls # c language server
         # magicstack.magicpython
 	# subframe7536.theme-maple
       jnoortheen.nix-ide
