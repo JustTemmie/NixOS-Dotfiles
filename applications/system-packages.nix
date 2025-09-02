@@ -21,6 +21,7 @@
       xdg-utils
       pigz
       tree
+      file
     ];
 
     packagesTerminalUI = with pkgs; [
