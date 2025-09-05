@@ -22,10 +22,6 @@
       pigz
       tree
       file
-      jq
-      fd
-      rg
-      resvg
     ];
 
     packagesTerminalUI = with pkgs; [
@@ -33,7 +29,6 @@
       nano
       htop
       glow # markdown viewer
-      yazi
     ];
 
     packagesGraphical = with pkgs; [
