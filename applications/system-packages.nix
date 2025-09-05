@@ -29,6 +29,7 @@
       nano
       htop
       glow # markdown viewer
+      yazi
     ];
 
     packagesGraphical = with pkgs; [
