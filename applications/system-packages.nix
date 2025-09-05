@@ -22,6 +22,7 @@
       pigz
       tree
       file
+      neovim
     ];
 
     packagesTerminalUI = with pkgs; [
