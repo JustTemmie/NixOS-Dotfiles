@@ -22,6 +22,10 @@
       pigz
       tree
       file
+      jq
+      fd
+      rg
+      resvg
     ];
 
     packagesTerminalUI = with pkgs; [
