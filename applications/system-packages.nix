@@ -53,6 +53,7 @@
       obs-studio
       vesktop
       imv
+      cyberchef
     ];
 
     packagesCompilersAndInterpreters = with pkgs; [
