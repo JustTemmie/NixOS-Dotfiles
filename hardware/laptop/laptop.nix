@@ -1,5 +1,5 @@
 { config, lib, pkgs, ... }: {
-  boot.kernelPackages = lib.mkForce pkgs.linuxPackages_6_15;
+#  boot.kernelPackages = lib.mkForce pkgs.linuxPackages_6_15;
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "usb_storage" "usbhid" "sd_mod" "sdhci_pci" ];
   boot.initrd.kernelModules = [ ];
