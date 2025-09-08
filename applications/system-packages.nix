@@ -22,6 +22,7 @@
       pigz
       tree
       file
+      hyperfine
     ];
 
     packagesTerminalUI = with pkgs; [
