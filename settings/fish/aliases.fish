@@ -1,6 +1,7 @@
 alias torsk="echo '><((((°>'"
 alias py="./venv/bin/python"
 alias doas="sudo"
+alias boobs="loginctl lock-session"
 
 abbr --add nr sudo nixos-rebuild
 
