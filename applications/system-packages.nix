@@ -22,7 +22,7 @@
       pigz
       tree
       file
-#      hyperfine
+      hyperfine
     ];
 
     packagesTerminalUI = with pkgs; [
@@ -74,9 +74,14 @@
     ];
 
     packagesMisc = with pkgs; [
-      ly
-
       nerd-fonts.fira-code
+
+      noto-fonts
+      noto-fonts-lgc-plus
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
+      noto-fonts-color-emoji
+      noto-fonts-emoji-blob-bin
     ];
   in
 {
