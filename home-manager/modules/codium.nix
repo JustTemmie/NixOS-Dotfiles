@@ -7,7 +7,6 @@
     profiles.default.extensions = with pkgs.vscode-extensions; [
       pkief.material-icon-theme
       vue.volar
-      leonardssh.vscord
       tamasfe.even-better-toml
       oderwat.indent-rainbow
       ritwickdey.liveserver

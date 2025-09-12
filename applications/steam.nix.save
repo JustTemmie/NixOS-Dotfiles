@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, ... }: {
+{ config, pkgs, ... }: {
   programs.appimage.enable = true;
   programs.appimage.binfmt = true;
 

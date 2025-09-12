@@ -82,6 +82,8 @@
       noto-fonts-cjk-serif
       noto-fonts-color-emoji
       noto-fonts-emoji-blob-bin
+
+      vulkan-tools
     ];
   in
 {
