@@ -23,7 +23,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # use latest kernel by default
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages;
 
   programs.fish.enable = true;
   programs.nix-ld.enable = true; # enable system support for unpatched binaries
