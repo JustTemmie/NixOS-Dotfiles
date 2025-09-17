@@ -14,8 +14,15 @@
         libpulseaudio
         libvorbis
         stdenv.cc.cc.lib
-        libkrb5
-        keyutils
+
+        xorg.libxcb dbus nss # Needed for electron-based shit I think
+
+        # Needed for gamescope to work right
+        libkrb5 keyutils
+
+        gamemode
+
+        cups # Needed for bitburner
       ];
     };
   };
