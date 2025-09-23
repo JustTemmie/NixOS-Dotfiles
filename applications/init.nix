@@ -1,10 +1,11 @@
 {
   imports = [
     ./system-packages.nix
-    ./firefox.nix
-    ./steam.nix
-    ./docker.nix
-    ./yazi.nix
+
+    ./apps/firefox.nix
+    ./apps/steam.nix
+    ./apps/docker.nix
+    ./apps/yazi.nix
 
     ./languages/c.nix
     ./languages/python.nix
