@@ -2,7 +2,7 @@
   programs.appimage.enable = true;
   programs.appimage.binfmt = true;
 
-  environment.systemPackages = with pkgs; [ gamescope ];
+  environment.systemPackages = with pkgs; [ gamescope gamescope-wsi ];
   nixpkgs.config.packageOverrides = pkgs: {
     steam = pkgs.steam.override {
       extraPkgs = pkgs: with pkgs; [
