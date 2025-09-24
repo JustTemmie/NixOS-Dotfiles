@@ -55,6 +55,7 @@
       vesktop
       imv
       ardour
+      lmms
     ];
 
     packagesCompilersAndInterpreters = with pkgs; [
