@@ -57,10 +57,10 @@
         "git.blame.editorDecoration.enabled" = true;
         "workbench.colorTheme" = "Maple Dark";
         "workbench.iconTheme" = "material-icon-theme";
-        "vscord.status.idle.check" = false;
         "vscord.status.idle.timeout" = 900;
+        "vscord.status.idle.disconnectOnIdle" = true;
         "vscord.app.name" = "VSCodium";
-        "vscord.app.privacyMode.enable" = true;
+        "liveServer.settings.donotVerifyTags" = true;
       };
     };
   };

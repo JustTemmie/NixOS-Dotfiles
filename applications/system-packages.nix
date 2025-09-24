@@ -54,6 +54,7 @@
       obs-studio
       vesktop
       imv
+      ardour
     ];
 
     packagesCompilersAndInterpreters = with pkgs; [
