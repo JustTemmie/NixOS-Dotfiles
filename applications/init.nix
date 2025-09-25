@@ -5,6 +5,7 @@
     ./apps/docker.nix
     ./apps/firefox.nix
     ./apps/steam.nix
+    ./apps/waydroid.nix
     ./apps/yazi.nix
 
     ./languages/c.nix
