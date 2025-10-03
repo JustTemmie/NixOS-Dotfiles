@@ -23,6 +23,8 @@
       tree
       file
       hyperfine
+      pandoc
+      texlive.combined.scheme-small
     ];
 
     packagesTerminalUI = with pkgs; [
