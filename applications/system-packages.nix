@@ -23,6 +23,7 @@
       tree
       file
       hyperfine
+      iptables
     ];
 
     packagesTerminalUI = with pkgs; [
