@@ -24,6 +24,8 @@
       file
       hyperfine
       iptables
+      pandoc
+      texlive.combined.scheme-small
     ];
 
     packagesTerminalUI = with pkgs; [
