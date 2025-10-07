@@ -24,6 +24,9 @@
         HostName relay.beaver.mom
         User root
 
+      Host proxier
+        HostName 192.168.1.4
+        User root
 
       Host jellyfin
         HostName 192.168.1.22
