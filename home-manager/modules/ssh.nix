@@ -20,8 +20,8 @@
         HostName bigti.me
         User minecraft
 
-      Host kamatera relay
-        HostName kamatera.beaver.mom
+      Host relay
+        HostName relay.beaver.mom
         User root
 
 
