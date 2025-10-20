@@ -8,8 +8,7 @@
   imports = [
       ./applications/init.nix
       ./environment/init.nix
-      ./hardware/init.nix
-      ./home-manager/init.nix
+      ./home/init.nix
       ./services/init.nix
   ];
 
