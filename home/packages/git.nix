@@ -1,10 +1,6 @@
 { config, pkgs, ... }: {
   programs.git = {
     enable = true;
-    user= {
-      email = "git@beaver.mom";
-      name = "Twig";
-    };
 
     signing = {
       signByDefault = true;
@@ -18,7 +14,11 @@
       init.defaultBranch = "main";
       commit.gpgsign = true;
       gpg.format = "ssh";
-      user.signingkey = "/home/twig/.ssh/id_ed25519.pub";
+      user = {
+        email = "git@beaver.mom";
+        name = "Twig";
+        signingkey = "/home/twig/.ssh/id_ed25519.pub";
+      };
     };
   };
 }

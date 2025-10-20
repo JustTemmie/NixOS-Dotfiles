@@ -13,11 +13,12 @@
 
   outputs = { nixpkgs, home-manager, ... } @ inputs:
   let
-    pkgs = nixpkgs.legacyPackages.x86_64-linux;
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
+    stable-pkgs = nixpkgs.legacyPackages.${system};
   in {
     nixosConfigurations = {
       "the-cube" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
           ./configuration.nix

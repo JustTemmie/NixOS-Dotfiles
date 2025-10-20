@@ -3,6 +3,7 @@
 
   imports = [
     ./packages/codium.nix
+    ./packages/firefox.nix
     ./packages/fish.nix
     ./packages/git.nix
     ./packages/kitty.nix
@@ -11,6 +12,11 @@
     ./packages/ncmpcpp.nix
 #      ./packages/rmpc.nix disabled until rmpc 0.9 is a nix pkg, maybe i should actually try flakes!??! 
     ./packages/ssh.nix
+    ./packages/steam.nix
+
+    ./languages/c.nix
+    ./languages/python.nix
+    ./languages/rust.nix
   ];
 
   home = {

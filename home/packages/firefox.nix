@@ -1,5 +1,4 @@
 { config, pkgs, ... }:
-
   let
     lock-false = {
       Value = false;
@@ -24,6 +23,7 @@
         EnableTrackingProtection = {
           Value= true;
           Locked = true;
+          Status = "locked";
           Cryptomining = true;
           Fingerprinting = true;
         };
