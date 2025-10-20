@@ -6,7 +6,6 @@
   nixpkgs.config.allowUnfree = true;
 
   imports = [
-      ./lix.nix
       ./applications/init.nix
       ./environment/init.nix
       ./hardware/init.nix
@@ -18,6 +17,8 @@
     group = "wheel";
     mode = "0755";
   };
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -38,6 +39,7 @@
   i18n.defaultLocale = "en_GB.UTF-8";
 
   system.autoUpgrade.enable = true;
+  system.flake.autoUpgrade.enable = true;
 
   nix.gc = {
     automatic = true;
