@@ -1,65 +1,26 @@
-{ config, pkgs, ... }:
+{ config, pkgs-stable, pkgs-unstable, ... }:
 
   let
-    packagesCommandline = with pkgs; [
-      unp # universal unzipper
+    packagesCommandline = with pkgs-stable; [
       wget
       curl
-      hyfetch
-      fastfetch
-      onefetch
-      yt-dlp
       ffmpeg
       imagemagick
       gnupg
       psmisc
-      nmap
       wireguard-tools
       lshw
       pciutils
       usbutils
-      xdg-utils
-      pigz
-      tree
-      file
-      hyperfine
       iptables
-      pandoc
-      texlive.combined.scheme-small
     ];
 
-    packagesTerminalUI = with pkgs; [
-      neovim
+    packagesTerminalUI = with pkgs-stable; [
       nano
       htop
-      glow # markdown viewer
     ];
 
-    packagesGraphical = with pkgs; [
-      onlyoffice-desktopeditors
-      typora
-      geogebra
-      godot
-      blender
-      tenacity
-      gimp
-      krita
-      inkscape
-      pavucontrol
-      protonplus
-      ungoogled-chromium
-      kdePackages.kdenlive
-      baobab
-      nautilus
-      mission-center
-      signal-desktop
-      prismlauncher
-      obs-studio
-      vesktop
-      imv
-    ];
-
-    packagesCompilersAndInterpreters = with pkgs; [
+    packagesCompilersAndInterpreters = with pkgs-stable; [
       libglvnd
       libglibutil
       typescript
@@ -67,35 +28,26 @@
       pnpm
     ];
 
-    packagesNix = with pkgs; [
+    packagesNix = with pkgs-stable; [
       nix-index
     ];
 
-    packagesSystem = with pkgs; [
+    packagesSystem = with pkgs-stable; [
       btrfs-progs
       cifs-utils
     ];
 
-    packagesMisc = with pkgs; [
-      nerd-fonts.fira-code
-
-      noto-fonts
-      noto-fonts-lgc-plus
-      noto-fonts-cjk-sans
-      noto-fonts-cjk-serif
-      noto-fonts-color-emoji
-      noto-fonts-emoji-blob-bin
-
+    packagesMisc = with pkgs-unstable; [
       vulkan-tools
     ];
+
   in
 {
   environment.systemPackages =
     packagesCommandline ++
     packagesTerminalUI ++
-    packagesGraphical ++
-    packagesCompilersAndInterpreters ++
     packagesNix ++
+    packagesCompilersAndInterpreters ++
     packagesSystem ++
     packagesMisc;
 }

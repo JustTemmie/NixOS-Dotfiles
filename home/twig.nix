@@ -10,12 +10,12 @@
     ./packages/mpd-discord-rpc.nix
     ./packages/mpd.nix
     ./packages/ncmpcpp.nix
+    ./packages/python.nix
 #      ./packages/rmpc.nix disabled until rmpc 0.9 is a nix pkg, maybe i should actually try flakes!??! 
     ./packages/ssh.nix
 
-    ./packages/languages/c.nix
-    ./packages/languages/python.nix
-    ./packages/languages/rust.nix
+
+    ./user-packages.nix
   ];
 
   home = {
