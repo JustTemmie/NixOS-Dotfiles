@@ -2,7 +2,7 @@
   imports = [
     ./system-packages.nix
 
-    ./apps/docker.nix
+    # ./apps/docker.nix
     ./apps/firefox.nix
     ./apps/steam.nix
 #    ./apps/waydroid.nix

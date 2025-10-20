@@ -1,11 +1,11 @@
 { config, pkgs, ... }: {
-  home.activation = {
-    ssh-permissions = ''
-      chmod 700 /home/twig/.ssh
-      chmod 600 /home/twig/.ssh/id_ed25519
-      chmod 644 /home/twig/.ssh/id_ed25519.pub
-    '';
-  };
+  # home.activation = {
+  #   ssh-permissions = ''
+  #     chmod 700 /home/twig/.ssh
+  #     chmod 600 /home/twig/.ssh/id_ed25519
+  #     chmod 644 /home/twig/.ssh/id_ed25519.pub
+  #   '';
+  # };
 
   programs.ssh = {
     enable = true;

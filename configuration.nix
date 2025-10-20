@@ -8,7 +8,7 @@
   imports = [
       ./applications/init.nix
       ./environment/init.nix
-      ./home/init.nix
+      # ./home/init.nix
       ./services/init.nix
   ];
 
@@ -38,7 +38,7 @@
   i18n.defaultLocale = "en_GB.UTF-8";
 
   system.autoUpgrade.enable = true;
-  system.flake.autoUpgrade.enable = true;
+  # system.flake.autoUpgrade.enable = true;
 
   nix.gc = {
     automatic = true;

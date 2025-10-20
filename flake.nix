@@ -12,7 +12,6 @@
   outputs = { nixpkgs, home-manager, ... } @ inputs:
   let
     pkgs = nixpkgs.legacyPackages.x86_64-linux;
-    home = home-manager;
   in {
     nixosConfigurations = {
       "the-cube" = nixpkgs.lib.nixosSystem {
@@ -21,6 +20,17 @@
         modules = [
           ./configuration.nix
           ./hardware/desktop.nix
+
+          home-manager.nixosModules.home-manager
+
+          {
+            home-manager = {
+              # useGlobalPkgs = true;
+              # useUserPackages = true;
+              # extraSpecialArgs = { inputs = inputs; };
+              users.twig = ./home/twig.nix;
+            };
+          }
         ];
       };
     };
