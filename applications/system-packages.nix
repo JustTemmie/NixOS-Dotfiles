@@ -57,9 +57,6 @@
       obs-studio
       vesktop
       imv
-      ardour
-      lmms
-      stepmania
     ];
 
     packagesCompilersAndInterpreters = with pkgs; [

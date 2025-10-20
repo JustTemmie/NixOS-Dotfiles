@@ -8,7 +8,6 @@
   imports = [
       ./applications/init.nix
       ./environment/init.nix
-      # ./home/init.nix
       ./services/init.nix
   ];
 

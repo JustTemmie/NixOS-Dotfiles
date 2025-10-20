@@ -5,8 +5,10 @@
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs?ref=nixos-25.05";
 
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { nixpkgs, home-manager, ... } @ inputs:
@@ -16,7 +18,7 @@
     nixosConfigurations = {
       "the-cube" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = { inputs = inputs; };
+        specialArgs = { inherit inputs; };
         modules = [
           ./configuration.nix
           ./hardware/desktop.nix
@@ -25,9 +27,9 @@
 
           {
             home-manager = {
-              # useGlobalPkgs = true;
-              # useUserPackages = true;
-              # extraSpecialArgs = { inputs = inputs; };
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = { inherit inputs; };
               users.twig = ./home/twig.nix;
             };
           }
