@@ -13,16 +13,6 @@
     # ./modules/ssh.nix
   ];
 
-  users.users.twig = {
-    isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" ];
-    description = "Hatsune Miku"
-
-    uid = 1000;
-
-    shell = pkgs.fish;
-  }
-
   home = {
     username = "twig";
     homeDirectory = "/home/twig";
