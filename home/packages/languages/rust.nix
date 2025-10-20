@@ -1,5 +1,5 @@
 { config, pkgs, ... }: {
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
     cargo
     rustc
     rustfmt
@@ -7,7 +7,7 @@
     rust-analyzer
   ];
 
-  environment.variables = {
+  home.sessionVariables = {
     RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
   };
 }

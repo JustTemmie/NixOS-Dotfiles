@@ -1,5 +1,5 @@
 { config, pkgs, ... }: {
-  environment.systemPackages = with pkgs; [
+  home.packages = with pkgs; [
     python313
     python313Packages.jedi
   ];
