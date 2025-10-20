@@ -36,6 +36,24 @@
           }
         ];
       };
+      "serenity" = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; inherit pkgs-unstable; inherit pkgs-stable; };
+        modules = [
+          ./configuration.nix
+          ./hardware/laptop.nix
+
+          home-manager.nixosModules.home-manager
+
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = { inherit inputs; inherit pkgs-unstable; inherit pkgs-stable; };
+              users.twig = ./home/twig.nix;
+            };
+          }
+        ];
+      };
     };
   };
 }
