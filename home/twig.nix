@@ -14,7 +14,6 @@
 #      ./packages/rmpc.nix disabled until rmpc 0.9 is a nix pkg, maybe i should actually try flakes!??! 
     ./packages/ssh.nix
 
-
     ./user-packages.nix
   ];
 

@@ -37,11 +37,15 @@
       baobab
       nautilus
       mission-center
-      signal-desktop
       prismlauncher
       obs-studio
       vesktop
+    ];
+
+    packagesGraphicalStable = with pkgs-stable; [
+      lmms
       imv
+      signal-desktop
     ];
 
     packagesMisc = with pkgs; [
@@ -60,5 +64,6 @@
     packagesCommandline ++
     packagesTerminalUI ++
     packagesGraphical ++
+    packagesGraphicalStable ++
     packagesMisc;
 }
