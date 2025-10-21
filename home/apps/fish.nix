@@ -1,5 +1,5 @@
 { config, pkgs, ... }: {
-  # home-manager.shell.enableFishIntegration = true;
+  home.shell.enableFishIntegration = true;
 
   programs.fish = {
     enable = true;

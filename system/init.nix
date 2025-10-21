@@ -4,9 +4,9 @@
     
     ./system-packages.nix
 
-    ./packages/docker.nix
-    ./packages/steam.nix
-    ./packages/yazi.nix
+    ./apps/docker.nix
+    ./apps/steam.nix
+    ./apps/yazi.nix
   ];
 }
 

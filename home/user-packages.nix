@@ -14,6 +14,7 @@
       hyperfine
       pandoc
       texlive.combined.scheme-small
+      mpc
     ];
 
     packagesTerminalUI = with pkgs; [

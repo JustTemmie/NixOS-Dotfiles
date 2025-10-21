@@ -2,17 +2,18 @@
   programs.home-manager.enable = true;
 
   imports = [
-    ./packages/codium.nix
-    ./packages/firefox.nix
-    ./packages/fish.nix
-    ./packages/git.nix
-    ./packages/kitty.nix
-    ./packages/mpd-discord-rpc.nix
-    ./packages/mpd.nix
-    ./packages/ncmpcpp.nix
-    ./packages/python.nix
-#      ./packages/rmpc.nix disabled until rmpc 0.9 is a nix pkg, maybe i should actually try flakes!??! 
-    ./packages/ssh.nix
+    ./apps/codium.nix
+    ./apps/firefox.nix
+    ./apps/fish.nix
+    ./apps/git.nix
+    ./apps/kitty.nix
+    ./apps/ncmpcpp.nix
+    ./apps/python.nix
+#      ./apps/rmpc.nix disabled until rmpc 0.9 is a nix pkg, maybe i should actually try flakes!??! 
+    ./apps/ssh.nix
+
+    ./services/mpd-discord-rpc.nix
+    ./services/mpd.nix
 
     ./user-packages.nix
   ];
