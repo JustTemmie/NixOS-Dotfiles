@@ -29,7 +29,7 @@
   swapDevices = [ ];
 
   networking = {
-    interfaces.enp19s0 = {
+    interfaces.enp17s0 = {
       ipv4.addresses = [{ 
         address = "192.168.1.100";
         prefixLength = 24;

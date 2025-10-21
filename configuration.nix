@@ -6,7 +6,7 @@
   nixpkgs.config.allowUnfree = true;
 
   imports = [
-      ./applications/init.nix
+      ./system/init.nix
       ./environment/init.nix
       ./services/init.nix
   ];
