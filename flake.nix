@@ -16,13 +16,14 @@
     system = "x86_64-linux";
     pkgs-unstable = nixpkgs.legacyPackages.${system};
     pkgs-stable = nixpkgs-stable.legacyPackages.${system};
-  in {
-    nixosConfigurations = {
-      "the-cube" = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; inherit pkgs-unstable; inherit pkgs-stable; };
+
+    mkHost = { hardwareModule }:
+      nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = { inherit inputs pkgs-unstable pkgs-stable; };
         modules = [
           ./configuration.nix
-          ./hardware/desktop.nix
+          hardwareModule
 
           home-manager.nixosModules.home-manager
 
@@ -30,29 +31,19 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              extraSpecialArgs = { inherit inputs; inherit pkgs-unstable; inherit pkgs-stable; };
+              extraSpecialArgs = { inherit inputs pkgs-unstable pkgs-stable; };
               users.twig = ./home/twig.nix;
             };
           }
         ];
       };
-      "serenity" = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; inherit pkgs-unstable; inherit pkgs-stable; };
-        modules = [
-          ./configuration.nix
-          ./hardware/laptop.nix
-
-          home-manager.nixosModules.home-manager
-
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              extraSpecialArgs = { inherit inputs; inherit pkgs-unstable; inherit pkgs-stable; };
-              users.twig = ./home/twig.nix;
-            };
-          }
-        ];
+  in {
+    nixosConfigurations = {
+      "the-cube" = mkHost {
+        hardwareModule = ./hardware/desktop.nix;
+      };
+      "serenity" = mkHost {
+        hardwareModule = ./hardware/laptop.nix;
       };
     };
   };
