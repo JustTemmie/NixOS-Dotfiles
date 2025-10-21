@@ -1,8 +1,7 @@
-{ pkgs, ... }: {
+{ config, pkgs, ... }: {
     virtualisation.docker = {
         enable = true;
 
-        storageDriver = config.fileSystems."/".fsType;
         rootless = {
             enable = true;
             setSocketVariable = true;
