@@ -1,6 +1,6 @@
 { pkgs, ... }: {
     virtualisation.docker = {
-#        enable = true;
+        enable = true;
 
         storageDriver = "btrfs";
         rootless = {
@@ -9,7 +9,6 @@
         };
     };
 
-    users.extraGroups.docker.members = [ "twig" ];
     users.users.twig.extraGroups = [ "docker" ];
 
     environment.systemPackages = [ pkgs.docker ];
