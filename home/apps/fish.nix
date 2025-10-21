@@ -3,6 +3,6 @@
 
   programs.fish = {
     enable = true;
-    shellInit = "source /etc/nixos/settings/fish/init.fish";
+    shellInit = "source /etc/nixos/3rdPartyConfigs/fish/init.fish";
   };
 }
