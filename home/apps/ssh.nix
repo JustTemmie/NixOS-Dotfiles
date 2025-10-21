@@ -38,7 +38,7 @@
       "jellyfin" = {
         hostname = "192.168.1.22";
         user = "root";
-      };d
+      };
       "archiver" = {
         hostname = "192.168.1.24";
         user = "root";

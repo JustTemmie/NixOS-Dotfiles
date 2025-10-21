@@ -7,7 +7,6 @@
 
   imports = [
       ./system/init.nix
-      ./environment/init.nix
   ];
 
   systemd.tmpfiles.settings."10-nixos-directory"."/etc/nixos".d = {
