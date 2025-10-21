@@ -28,7 +28,7 @@
       pnpm
     ];
 
-    packagesNix = with pkgs-stable; [
+    packagesNix = with pkgs-unstable; [
       nix-index
     ];
 
