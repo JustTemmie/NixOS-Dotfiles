@@ -59,6 +59,7 @@
     packagesProprietary = with pkgs; [
       typora
       geogebra
+      jetbrains.idea-ultimate
     ];
   in
 {
