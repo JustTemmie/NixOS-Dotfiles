@@ -1,6 +1,6 @@
-{ config, pkgs-stable, pkgs-unstable, ... }:
+{ config, pkgs, pkgs-stable, pkgs-unstable, ... }:
   let
-    packagesCommandline = with pkgs-unstable; [
+    packagesCommandline = with pkgs; [
       unp # universal unzipper
       hyfetch
       fastfetch
@@ -17,14 +17,12 @@
       mpc
     ];
 
-    packagesTerminalUI = with pkgs-unstable; [
+    packagesTerminalUI = with pkgs; [
       glow # markdown viewer
     ];
 
-    packagesGraphical = with pkgs-unstable; [
+    packagesGraphical = with pkgs; [
       onlyoffice-desktopeditors
-      typora
-      geogebra
       godot
       blender
       tenacity
@@ -41,15 +39,13 @@
       prismlauncher
       obs-studio
       vesktop
-    ];
-
-    packagesGraphicalStable = with pkgs-stable; [
-      lmms
+      stable.lmms
       imv
       signal-desktop
     ];
 
-    packagesMisc = with pkgs-unstable; [
+
+    packagesMisc = with pkgs; [
       nerd-fonts.fira-code
 
       noto-fonts
@@ -59,12 +55,17 @@
       noto-fonts-color-emoji
       noto-fonts-emoji-blob-bin
     ];
+
+    packagesProprietary = with pkgs; [
+      typora
+      geogebra
+    ];
   in
 {
   home.packages =
     packagesCommandline ++
     packagesTerminalUI ++
     packagesGraphical ++
-    packagesGraphicalStable ++
-    packagesMisc;
+    packagesMisc ++
+    packagesProprietary;
 }
