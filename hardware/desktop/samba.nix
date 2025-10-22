@@ -72,6 +72,11 @@
     fsType = "cifs";
     options = options;
   };
+  fileSystems."/home/twig/Network/Shared" = {
+    device = "//192.168.1.20/Shared";
+    fsType = "cifs";
+    options = options;
+  };
   fileSystems."/home/twig/Network/Torrents" = {
     device = "//192.168.1.20/Torrents";
     fsType = "cifs";
