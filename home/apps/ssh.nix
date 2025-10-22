@@ -43,6 +43,10 @@
         hostname = "192.168.1.24";
         user = "root";
       };
+      "copyparty" = {
+        hostname = "192.168.1.25";
+        user = "copyparty";
+      };
       "discord-bots" = {
         hostname = "192.168.1.32";
         user = "discord-bots";
