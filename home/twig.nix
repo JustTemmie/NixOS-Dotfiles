@@ -12,6 +12,8 @@
 #      ./apps/rmpc.nix disabled until rmpc 0.9 is a nix pkg, maybe i should actually try flakes!??! 
     ./apps/ssh.nix
 
+    ./environment/fonts.nix
+
     ./services/mpd-discord-rpc.nix
     ./services/mpd.nix
 
