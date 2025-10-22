@@ -22,7 +22,7 @@
         inherit system;
         specialArgs = { inherit inputs; inherit pkgs-stable; };
         modules = [
-          ./configuration.nix
+          ./system/system.nix
           hardwareModule
 
           home-manager.nixosModules.home-manager
