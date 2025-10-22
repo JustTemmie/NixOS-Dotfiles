@@ -14,6 +14,8 @@
     ./environment/nix.nix
     ./environment/users.nix
     
+    ./optional/samba.nix
+
     ./system-packages.nix
   ];
 
@@ -24,6 +26,9 @@
 
   # use latest kernel by default
   boot.kernelPackages = pkgs.linuxPackages;
+
+  programs.appimage.enable = true;
+  programs.appimage.binfmt = true;
 
   programs.fish.enable = true; # i get issues if i don't enable this
   programs.nix-ld.enable = true; # enable system support for unpatched binaries

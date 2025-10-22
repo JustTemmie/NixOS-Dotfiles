@@ -40,10 +40,10 @@
   in {
     nixosConfigurations = {
       "the-cube" = mkHost {
-        hardwareModule = ./hardware/desktop.nix;
+        hardwareModule = ./hosts/the-cube/the-cube.nix;
       };
       "serenity" = mkHost {
-        hardwareModule = ./hardware/laptop.nix;
+        hardwareModule = ./hosts/serenity/serenity.nix;
       };
     };
   };
