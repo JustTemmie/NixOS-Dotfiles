@@ -4,7 +4,7 @@
     settings = {
       id = 1397363004676509729;
       format = {
-        small_image = "";
+        display_type = "details";
       };
     };
   };
