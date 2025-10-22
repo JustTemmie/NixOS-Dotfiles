@@ -12,9 +12,9 @@
     ./environment/networking.nix
     # ./environment/niri.nix
     ./environment/nix.nix
+    ./environment/samba.nix
     ./environment/users.nix
     
-    ./optional/samba.nix
 
     ./system-packages.nix
   ];
