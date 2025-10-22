@@ -1,7 +1,7 @@
-{ config, pkgs-stable, pkgs-unstable, ... }:
+{ config, pkgs, ... }:
 
   let
-    packagesCommandline = with pkgs-stable; [
+    packagesCommandline = with pkgs; [
       wget
       curl
       ffmpeg
@@ -15,12 +15,12 @@
       iptables
     ];
 
-    packagesTerminalUI = with pkgs-stable; [
+    packagesTerminalUI = with pkgs; [
       nano
       htop
     ];
 
-    packagesCompilersAndInterpreters = with pkgs-stable; [
+    packagesCompilersAndInterpreters = with pkgs; [
       libglvnd
       libglibutil
       typescript
@@ -28,16 +28,16 @@
       pnpm
     ];
 
-    packagesNix = with pkgs-unstable; [
+    packagesNix = with pkgs; [
       nix-index
     ];
 
-    packagesSystem = with pkgs-stable; [
+    packagesSystem = with pkgs; [
       btrfs-progs
       cifs-utils
     ];
 
-    packagesMisc = with pkgs-unstable; [
+    packagesMisc = with pkgs; [
       vulkan-tools
     ];
 
@@ -46,8 +46,8 @@
   environment.systemPackages =
     packagesCommandline ++
     packagesTerminalUI ++
-    packagesNix ++
     packagesCompilersAndInterpreters ++
+    packagesNix ++
     packagesSystem ++
     packagesMisc;
 }
