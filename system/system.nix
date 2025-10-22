@@ -1,4 +1,4 @@
-{
+{ config, pkgs, ... }: {
   imports = [
     ./apps/docker.nix
     ./apps/steam.nix
