@@ -17,7 +17,7 @@
     pkgs = nixpkgs.legacyPackages.${system};
     pkgs-stable = nixpkgs-stable.legacyPackages.${system};
 
-    mkHost = { hardwareModule }:
+    mkPC = { hardwareModule }:
       nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; inherit pkgs-stable; };
@@ -39,10 +39,10 @@
       };
   in {
     nixosConfigurations = {
-      "the-cube" = mkHost {
+      "the-cube" = mkPC {
         hardwareModule = ./hosts/the-cube/the-cube.nix;
       };
-      "serenity" = mkHost {
+      "serenity" = mkPC {
         hardwareModule = ./hosts/serenity/serenity.nix;
       };
     };
