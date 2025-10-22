@@ -2,8 +2,13 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }: {
-  nixpkgs.config.allowUnfree = true;
+{ config, pkgs, pkgs-stable, ... }: {
+  nixpkgs.config = {
+    allowUnfree = true;
+    packageOverrides = pkgs: {
+      stable = pkgs-stable;
+    };
+  };
 
   imports = [
       ./system/init.nix
