@@ -1,6 +1,6 @@
-{ config, pkgs, pkgs-stable, ... }:
+{ config, pkgs-stable, pkgs-unstable, ... }:
   let
-    packagesCommandline = with pkgs; [
+    packagesCommandline = with pkgs-unstable; [
       unp # universal unzipper
       hyfetch
       fastfetch
@@ -17,11 +17,11 @@
       mpc
     ];
 
-    packagesTerminalUI = with pkgs; [
+    packagesTerminalUI = with pkgs-unstable; [
       glow # markdown viewer
     ];
 
-    packagesGraphical = with pkgs; [
+    packagesGraphical = with pkgs-unstable; [
       onlyoffice-desktopeditors
       typora
       geogebra
@@ -49,7 +49,7 @@
       signal-desktop
     ];
 
-    packagesMisc = with pkgs; [
+    packagesMisc = with pkgs-unstable; [
       nerd-fonts.fira-code
 
       noto-fonts
