@@ -42,6 +42,7 @@
       stable.lmms
       imv
       signal-desktop
+      bambu-studio
     ];
 
 
@@ -57,7 +58,6 @@
     ];
 
     packagesProprietary = with pkgs; [
-      typora
       geogebra
       jetbrains.idea-ultimate
     ];
