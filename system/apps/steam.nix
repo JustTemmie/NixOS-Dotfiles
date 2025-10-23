@@ -5,6 +5,7 @@
 
   config = lib.mkIf config.myModules.steam.enable {
     environment.systemPackages = with pkgs; [ gamescope gamescope-wsi ];
+
     nixpkgs.config.packageOverrides = pkgs: {
       steam = pkgs.steam.override {
         extraPkgs = pkgs: with pkgs; [
@@ -29,7 +30,12 @@
       };
     };
 
-    programs.steam.enable = true;
+    programs.steam = {
+      enable = true;
+      extraCompatPackages = with pkgs; [
+        proton-ge-bin
+      ];
+    };
   };
 }
 
