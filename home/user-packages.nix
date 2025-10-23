@@ -39,10 +39,10 @@
       prismlauncher
       obs-studio
       vesktop
-      stable.lmms
       imv
       signal-desktop
-      bambu-studio
+      stable.lmms
+      stable.bambu-studio
     ];
 
 
