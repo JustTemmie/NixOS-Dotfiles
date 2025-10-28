@@ -12,8 +12,8 @@
       tree
       file
       hyperfine
-      pandoc
-      texlive.combined.scheme-small
+      stable.pandoc
+      stable.texlive.combined.scheme-small
     ];
 
     packagesTerminalUI = with pkgs; [
@@ -21,7 +21,7 @@
     ];
 
     packagesGraphical = with pkgs; [
-      onlyoffice-desktopeditors
+      vesktop
       blender
       tenacity
       gimp
@@ -30,29 +30,29 @@
       pavucontrol
       protonplus
       ungoogled-chromium
-      kdePackages.kdenlive
       baobab
       nautilus
       mission-center
       prismlauncher
       obs-studio
-      vesktop
-      imv
-      signal-desktop
+      kdePackages.kdenlive
+      stable.onlyoffice-desktopeditors
+      stable.imv
+      stable.signal-desktop
       stable.lmms
       stable.bambu-studio
     ];
 
 
     packagesMisc = with pkgs; [
-      nerd-fonts.fira-code
+      stable.nerd-fonts.fira-code
 
-      noto-fonts
-      noto-fonts-lgc-plus
-      noto-fonts-cjk-sans
-      noto-fonts-cjk-serif
-      noto-fonts-color-emoji
-      noto-fonts-emoji-blob-bin
+      stable.noto-fonts
+      stable.noto-fonts-lgc-plus
+      stable.noto-fonts-cjk-sans
+      stable.noto-fonts-cjk-serif
+      stable.noto-fonts-color-emoji
+      stable.noto-fonts-emoji-blob-bin
     ];
 
     packagesProprietary = with pkgs; [
