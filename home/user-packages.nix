@@ -23,7 +23,6 @@
 
     packagesGraphical = with pkgs; [
       onlyoffice-desktopeditors
-      godot
       blender
       tenacity
       gimp
