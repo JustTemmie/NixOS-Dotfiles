@@ -1,4 +1,4 @@
-{ config, pkgs, pkgs-stable, pkgs-unstable, ... }:
+{ config, pkgs, ... }:
   let
     packagesCommandline = with pkgs; [
       unp # universal unzipper
@@ -14,7 +14,6 @@
       hyperfine
       pandoc
       texlive.combined.scheme-small
-      mpc
     ];
 
     packagesTerminalUI = with pkgs; [
