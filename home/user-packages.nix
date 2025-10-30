@@ -56,7 +56,7 @@
 
     packagesProprietary = with pkgs; [
       geogebra
-      jetbrains.idea-ultimate
+#      jetbrains.idea-ultimate
     ];
   in
 {
