@@ -6,7 +6,7 @@
   services.mpd = {
     enable = true;
     musicDirectory = "~/Music";
-    playlistDirectory = "/home/twig/Music/PlaylistsMPD";
+#    playlistDirectory = "/home/twig/Music/PlaylistsMPD";
     
     network.startWhenNeeded = true;
 

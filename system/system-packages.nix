@@ -40,7 +40,6 @@
     packagesMisc = with pkgs; [
       vulkan-tools
     ];
-
   in
 {
   environment.systemPackages =

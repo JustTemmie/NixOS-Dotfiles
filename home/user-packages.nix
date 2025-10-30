@@ -43,7 +43,6 @@
       stable.bambu-studio
     ];
 
-
     packagesMisc = with pkgs; [
       stable.nerd-fonts.fira-code
 
