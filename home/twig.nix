@@ -14,7 +14,7 @@
 
     # ./environment/fonts.nix
 
-    # ./services/mpd-discord-rpc.nix disabled due to steam presence
+    ./services/mpd-discord-rpc.nix
     ./services/mpd-scribble.nix
     ./services/mpd.nix
 
