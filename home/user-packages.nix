@@ -38,7 +38,7 @@
       kdePackages.kdenlive
       stable.onlyoffice-desktopeditors
       stable.imv
-      stable.signal-desktop
+      signal-desktop
       stable.lmms
       stable.bambu-studio
     ];
