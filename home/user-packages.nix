@@ -33,7 +33,6 @@
       baobab
       nautilus
       mission-center
-      prismlauncher
       obs-studio
       qbittorrent
       kdePackages.kdenlive
