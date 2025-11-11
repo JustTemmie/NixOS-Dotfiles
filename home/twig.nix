@@ -12,6 +12,7 @@
     ./apps/python.nix
 #      ./apps/rmpc.nix disabled until rmpc 0.9 is a nix pkg, maybe i should actually try flakes!??! 
     ./apps/ssh.nix
+    ./apps/vesktop.nix
 
     # ./environment/fonts.nix
 

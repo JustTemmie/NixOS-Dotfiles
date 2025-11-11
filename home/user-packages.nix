@@ -21,7 +21,6 @@
     ];
 
     packagesGraphical = with pkgs; [
-      vesktop
       blender
       tenacity
       gimp
