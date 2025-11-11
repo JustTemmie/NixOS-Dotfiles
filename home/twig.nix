@@ -16,7 +16,7 @@
 
     # ./environment/fonts.nix
 
-    ./services/mpd-discord-rpc.nix
+    # ./services/mpd-discord-rpc.nix steam presence
     ./services/mpd-scribble.nix
     ./services/mpd.nix
 
