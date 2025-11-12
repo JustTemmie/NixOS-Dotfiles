@@ -7,6 +7,7 @@
     ./environment/audio.nix
     ./environment/cosmic.nix
     ./environment/fonts.nix
+    ./environment/kde.nix
     ./environment/keyboard.nix
     ./environment/locale.nix
     ./environment/networking.nix
