@@ -34,6 +34,7 @@
       mission-center
       obs-studio
       qbittorrent
+      r2modman
       wireshark-qt
       kdePackages.kdenlive
       stable.onlyoffice-desktopeditors
