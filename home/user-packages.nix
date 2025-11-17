@@ -22,7 +22,6 @@
 
     packagesGraphical = with pkgs; [
       blender
-      tenacity
       gimp
       krita
       inkscape
@@ -41,6 +40,7 @@
       stable.imv
       signal-desktop
       stable.lmms
+      stable.tenacity
       stable.bambu-studio
     ];
 
