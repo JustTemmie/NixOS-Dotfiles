@@ -36,9 +36,9 @@
       r2modman
       wireshark-qt
       kdePackages.kdenlive
+      signal-desktop
       stable.onlyoffice-desktopeditors
       stable.imv
-      signal-desktop
       stable.lmms
       stable.tenacity
       stable.bambu-studio
