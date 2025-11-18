@@ -2,6 +2,8 @@
   let
     packagesCommandline = with pkgs; [
       unp # universal unzipper
+      unrar-free # required by rar by unp
+
       hyfetch
       fastfetch
       onefetch
