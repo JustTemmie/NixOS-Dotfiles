@@ -7,7 +7,7 @@
     profiles.default.extensions = with pkgs.vscode-extensions; [
       pkief.material-icon-theme
       vue.volar
-      leonardssh.vscord
+      # leonardssh.vscord
       tamasfe.even-better-toml
       oderwat.indent-rainbow
       ritwickdey.liveserver
@@ -57,9 +57,9 @@
         "git.blame.editorDecoration.enabled" = true;
         "workbench.colorTheme" = "Maple Dark";
         "workbench.iconTheme" = "material-icon-theme";
-        "vscord.status.idle.timeout" = 900;
-        "vscord.status.idle.disconnectOnIdle" = true;
-        "vscord.app.name" = "VSCodium";
+        # "vscord.status.idle.timeout" = 900;
+        # "vscord.status.idle.disconnectOnIdle" = true;
+        # "vscord.app.name" = "VSCodium";
         "liveServer.settings.donotVerifyTags" = true;
       };
     };
