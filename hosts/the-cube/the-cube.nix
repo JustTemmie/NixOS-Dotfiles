@@ -4,7 +4,7 @@
 
     ./gpu.nix
     ./ollama.nix
-    ./vr.nix
+    # ./vr.nix
   ];
 
   myModules.samba.enable = true;
@@ -53,7 +53,7 @@
       interface = "enp17s0";
     };
 
-    nameservers = [ "192.168.1.2" "9.9.9.9" ];
+    nameservers = [ "9.9.9.9" ];
   };
 
   # This value determines the NixOS release from which the default

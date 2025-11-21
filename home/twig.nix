@@ -10,7 +10,7 @@
     ./apps/ncmpcpp.nix
     ./apps/prismlauncher.nix
     ./apps/python.nix
-#      ./apps/rmpc.nix disabled until rmpc 0.9 is a nix pkg, maybe i should actually try flakes!??! 
+    ./apps/rmpc.nix
     ./apps/ssh.nix
     ./apps/vesktop.nix
 
@@ -21,6 +21,7 @@
     ./services/mpd.nix
 
     ./user-packages.nix
+    ./vr.nix
   ];
 
   home = {

@@ -18,6 +18,7 @@
     
 
     ./system-packages.nix
+    ./vr.nix
   ];
 
   services.libinput.enable = true;

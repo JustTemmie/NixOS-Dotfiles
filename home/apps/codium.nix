@@ -7,10 +7,9 @@
     profiles.default.extensions = with pkgs.vscode-extensions; [
       pkief.material-icon-theme
       vue.volar
-      # leonardssh.vscord
       tamasfe.even-better-toml
       oderwat.indent-rainbow
-      ritwickdey.liveserver
+      # ritwi6ckdey.liveserver
 #      ccls-project.ccls # c language server
         # magicstack.magicpython
 	# subframe7536.theme-maple
