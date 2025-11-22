@@ -9,6 +9,7 @@
       vue.volar
       tamasfe.even-better-toml
       oderwat.indent-rainbow
+      leonardssh.vscord
       # ritwi6ckdey.liveserver
 #      ccls-project.ccls # c language server
         # magicstack.magicpython
@@ -56,9 +57,9 @@
         "git.blame.editorDecoration.enabled" = true;
         "workbench.colorTheme" = "Maple Dark";
         "workbench.iconTheme" = "material-icon-theme";
-        # "vscord.status.idle.timeout" = 900;
-        # "vscord.status.idle.disconnectOnIdle" = true;
-        # "vscord.app.name" = "VSCodium";
+        "vscord.status.idle.timeout" = 300;
+        "vscord.status.idle.disconnectOnIdle" = true;
+        "vscord.app.name" = "VSCodium";
         "liveServer.settings.donotVerifyTags" = true;
       };
     };

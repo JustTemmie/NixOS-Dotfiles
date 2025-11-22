@@ -16,6 +16,10 @@
       hyperfine
       stable.pandoc
       stable.texlive.combined.scheme-small
+
+      wine
+      winetricks
+      protontricks
     ];
 
     packagesTerminalUI = with pkgs; [
