@@ -4,7 +4,7 @@
 
     ./gpu.nix
     ./ollama.nix
-    # ./vr.nix
+    ./vr.nix
   ];
 
   myModules.samba.enable = true;

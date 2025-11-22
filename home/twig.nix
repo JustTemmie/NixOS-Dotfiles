@@ -1,6 +1,4 @@
 { config, pkgs, lib, ... }: {
-  programs.home-manager.enable = true;
-
   imports = [
     ./apps/codium.nix
     ./apps/firefox.nix
@@ -14,21 +12,18 @@
     ./apps/ssh.nix
     ./apps/vesktop.nix
 
-    # ./environment/fonts.nix
-
     # ./services/mpd-discord-rpc.nix steam presence
     ./services/mpd-scribble.nix
     ./services/mpd.nix
 
     ./user-packages.nix
-    ./vr.nix
   ];
+
+  programs.home-manager.enable = true;
 
   home = {
     username = "twig";
     homeDirectory = "/home/twig";
-
     stateVersion = "25.05";
   };
-  
 }

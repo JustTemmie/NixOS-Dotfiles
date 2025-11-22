@@ -6,6 +6,8 @@
   config = lib.mkIf config.myModules.steam.enable {
     environment.systemPackages = with pkgs; [ gamescope gamescope-wsi ];
 
+    hardware.steam-hardware.enable = true;
+
     nixpkgs.config.packageOverrides = pkgs: {
       steam = pkgs.steam.override {
         extraPkgs = pkgs: with pkgs; [

@@ -16,9 +16,7 @@
     ./environment/samba.nix
     ./environment/users.nix
     
-
     ./system-packages.nix
-    ./vr.nix
   ];
 
   services.libinput.enable = true;
