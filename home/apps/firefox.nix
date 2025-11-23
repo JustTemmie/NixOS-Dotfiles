@@ -42,6 +42,7 @@
         # Check about:support for extension/add-on ID strings.
         # Valid strings for installation_mode are "allowed", "blocked",
         # "force_installed" and "normal_installed".
+        # found in about:support
         ExtensionSettings = {
           "*".installation_mode = "allow"; # applies for all other addons
           # uBlock Origin:
@@ -89,12 +90,11 @@
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/steam-database/latest.xpi";
             installation_mode = "force_installed";
           };
-          # Tamper monkey
-#          "uBlock0@raymondhill.net" = {
-#            install_url = "https://addons.mozilla.org/firefox/downloads/latest/tampermonkey/latest.xpi";
-#            installation_mode = "force_installed";
-#          };
-
+          # buster
+          "e58d3966-3d76-4cd9-8552-1582fbc800c1o" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/buster-captcha-solver/latest.xpi";
+            installation_mode = "force_installed";
+          };
 
           # Temmie's theme
           "{92976180-e90e-46e6-9dd9-546ef0eb3342}" = {
