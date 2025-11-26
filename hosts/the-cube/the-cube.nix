@@ -7,6 +7,10 @@
     ./vr.nix
   ];
 
+  environment.systemPackages = [
+    pkgs.sm64coopdx
+  ];
+
   myModules.samba.enable = true;
   myModules.steam.enable = true;
 
