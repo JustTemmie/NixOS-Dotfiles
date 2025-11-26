@@ -10,8 +10,6 @@
   environment.systemPackages = [
     pkgs.sm64coopdx
   ];
-  # sm64 coop
-  networking.firewall.allowedUDPPorts = [ 8000 ];
 
 
   myModules.samba.enable = true;

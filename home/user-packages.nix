@@ -44,6 +44,7 @@
       kdePackages.kdenlive
       signal-desktop
       bs-manager
+      
       stable.onlyoffice-desktopeditors
       stable.imv
       stable.lmms
