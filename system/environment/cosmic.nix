@@ -9,14 +9,15 @@
       xwayland.enable = true;
     };
 
-    environment.cosmic.excludePackages = with pkgs; [
-      cosmic-edit
-      cosmic-player
-      cosmic-store
-      cosmic-term
-    ];
   };
-
+  
+  environment.cosmic.excludePackages = with pkgs; [
+    cosmic-edit
+    cosmic-player
+    cosmic-store
+    cosmic-term
+  ];
+  
   environment.sessionVariables.NIXOS_OZONE_WL = 1;
 
   # global clipboard control
