@@ -23,16 +23,12 @@
         user = "root";
       };
 
-      "proxier" = {
-        hostname = "192.168.1.4";
-        user = "root";
-      };
       "caddy" = {
-        hostname = "192.168.1.5";
+        hostname = "192.168.1.2";
         user = "root";
       };
-      "wg" = {
-        hostname = "192.168.1.6";
+      "proxier" = {
+        hostname = "192.168.1.3";
         user = "root";
       };
       "jellyfin" = {

@@ -1,8 +1,21 @@
 { config, pkgs, ... }: {
-  services.xserver.enable = true;
+  services = {
+    xserver.enable = true;
 
-  services.desktopManager.cosmic.enable = true;
-  services.displayManager.cosmic-greeter.enable = true;
+    displayManager.cosmic-greeter.enable = true;
+
+    desktopManager.cosmic = {
+      enable = true;
+      xwayland.enable = true;
+    };
+
+    environment.cosmic.excludePackages = with pkgs; [
+      cosmic-edit
+      cosmic-player
+      cosmic-store
+      cosmic-term
+    ];
+  };
 
   environment.sessionVariables.NIXOS_OZONE_WL = 1;
 
