@@ -9,6 +9,7 @@
       "user"
       "users"
       "credentials=/etc/nixos/private/smb-secrets"
+      "_netdev"
       "uid=1000"
     ];
   in

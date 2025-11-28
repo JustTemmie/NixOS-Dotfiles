@@ -8,7 +8,6 @@
       enable = true;
       xwayland.enable = true;
     };
-
   };
   
   environment.cosmic.excludePackages = with pkgs; [
