@@ -32,21 +32,18 @@
         user = "root";
       };
       "jellyfin" = {
-        hostname = "192.168.1.22";
+        hostname = "192.168.1.51";
         user = "root";
       };
-      "archiver" = {
-        hostname = "192.168.1.24";
+      "qbittorrent" = {
+        hostname = "192.168.1.52";
         user = "root";
       };
       "copyparty" = {
-        hostname = "192.168.1.25";
+        hostname = "192.168.1.53";
         user = "copyparty";
       };
-      "discord-bots" = {
-        hostname = "192.168.1.32";
-        user = "discord-bots";
-      };
+
       "satisfactory" = {
         hostname = "192.168.1.40";
         user = "steam";
