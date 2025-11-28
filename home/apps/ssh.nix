@@ -41,13 +41,17 @@
       };
       "copyparty" = {
         hostname = "192.168.1.53";
-        user = "copyparty";
+        user = "root";
+      };
+      "jellyseerr" = {
+        hostname = "192.168.1.30";
+        user = "root";
       };
 
-      "satisfactory" = {
-        hostname = "192.168.1.40";
-        user = "steam";
-      };
+      # "satisfactory" = {
+      #   hostname = "192.168.1.40";
+      #   user = "steam";
+      # };
     };
   };
 }
