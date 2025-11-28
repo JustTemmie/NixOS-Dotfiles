@@ -44,7 +44,7 @@
       kdePackages.kdenlive
       signal-desktop
       bs-manager
-      mpd
+      mpv
       
       stable.onlyoffice-desktopeditors
       stable.imv
