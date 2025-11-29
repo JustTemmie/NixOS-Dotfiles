@@ -13,6 +13,4 @@
     dates = "weekly";
     options = "--delete-older-than 30d";
   };
-
-  system.autoUpgrade.enable = true;
 }

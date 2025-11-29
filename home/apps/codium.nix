@@ -11,12 +11,12 @@
       oderwat.indent-rainbow
       leonardssh.vscord
       # ritwi6ckdey.liveserver
-#      ccls-project.ccls # c language server
-        # magicstack.magicpython
-	# subframe7536.theme-maple
+      # ccls-project.ccls # c language server
+      # magicstack.magicpython
+      # subframe7536.theme-maple
       jnoortheen.nix-ide
       ms-python.python
-#      13xforever.language-x86-64-assembly
+      # 13xforever.language-x86-64-assembly
       mechatroner.rainbow-csv
       rust-lang.rust-analyzer
       tauri-apps.tauri-vscode
