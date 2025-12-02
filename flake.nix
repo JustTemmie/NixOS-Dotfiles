@@ -12,7 +12,7 @@
     };
   };
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, ... } @ inputs:
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, flatpaks, ... } @ inputs:
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
