@@ -16,6 +16,8 @@
     cosmic-store
     cosmic-term
   ];
+
+  services.system76-scheduler.enable = true;
   
   environment.sessionVariables.NIXOS_OZONE_WL = 1;
 
