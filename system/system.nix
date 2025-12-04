@@ -19,6 +19,7 @@
     ./system-packages.nix
   ];
 
+  services.flatpak.enable = true;
   services.libinput.enable = true;
 
   boot.loader.systemd-boot.enable = true;
