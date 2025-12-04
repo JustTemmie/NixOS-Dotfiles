@@ -34,6 +34,7 @@
               useUserPackages = true;
               extraSpecialArgs = { inherit inputs; };
               users.twig = ./home/twig.nix;
+              users.mae = ./home/mae.nix;
             };
           }
         ];
