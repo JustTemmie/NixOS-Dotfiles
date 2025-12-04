@@ -111,7 +111,7 @@
           "sidebar.VerticalTabs" = lock-true;
           "sidebar.main.tools" = "";
           "sidebar.position_start" = lock-false; # align it to the right
-          "browser.download.dir" = "/home/twig";
+          # "browser.download.dir" = "/home/twig";
 
           "extensions.pocket.enabled" = lock-false;
           "browser.topsites.contile.enabled" = lock-false;
