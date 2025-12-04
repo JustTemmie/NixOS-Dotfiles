@@ -106,6 +106,7 @@
         # Check about:config for options.
         Preferences = { 
           "browser.contentblocking.category" = { Value = "strict"; Status = "locked"; };
+          "widget.gtk.libadwaita-colors.enabled" = false; # cosmic colouring
 
           "sidebar.VerticalTabs" = lock-true;
           "sidebar.main.tools" = "";

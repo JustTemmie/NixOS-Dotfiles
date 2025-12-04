@@ -20,75 +20,75 @@
 
   config = lib.mkIf config.myModules.samba.enable {
     fileSystems."/home/twig/Documents" = {
-      device = "//192.168.1.50/Documents";
+      device = "//192.168.2.10/Documents";
       fsType = "cifs";
       options = options;
     };
     fileSystems."/home/twig/Downloads" = {
-      device = "//192.168.1.50/Downloads";
+      device = "//192.168.2.10/Downloads";
       fsType = "cifs";
       options = options;
     };
     fileSystems."/home/twig/Music" = {
-      device = "//192.168.1.50/Music";
+      device = "//192.168.2.10/Music";
       fsType = "cifs";
       options = options;
     };
       fileSystems."/home/twig/Photos" = {
-      device = "//192.168.1.50/Photos";
+      device = "//192.168.2.10/Photos";
       fsType = "cifs";
       options = options;
     };
     fileSystems."/home/twig/Pictures" = {
-      device = "//192.168.1.50/Pictures";
+      device = "//192.168.2.10/Pictures";
       fsType = "cifs";
       options = options;
     };
     fileSystems."/home/twig/Videos" = {
-      device = "//192.168.1.50/Videos";
+      device = "//192.168.2.10/Videos";
       fsType = "cifs";
       options = options;
     };
 
     fileSystems."/home/twig/Pyra/NAS" = {
-      device = "//192.168.1.50/Pyra";
+      device = "//192.168.2.10/Pyra";
       fsType = "cifs";
       options = options;
     };
 
 
     fileSystems."/home/twig/Network/Archive" = {
-      device = "//192.168.1.50/Archive";
+      device = "//192.168.2.10/Archive";
       fsType = "cifs";
       options = options;
     };
     fileSystems."/home/twig/Network/Dreams" = {
-      device = "//192.168.1.50/Dreams";
+      device = "//192.168.2.10/Dreams";
       fsType = "cifs";
       options = options;
     };
     fileSystems."/home/twig/Network/Work" = {
-      device = "//192.168.1.50/Work";
+      device = "//192.168.2.10/Work";
       fsType = "cifs";
       options = options;
     };
     fileSystems."/home/twig/Network/Media" = {
-      device = "//192.168.1.50/Media";
+      device = "//192.168.2.10/Media";
       fsType = "cifs";
       options = options;
     };
     fileSystems."/home/twig/Network/Shared" = {
-      device = "//192.168.1.50/Shared";
+      device = "//192.168.2.10/Shared";
       fsType = "cifs";
       options = options;
     };
     fileSystems."/home/twig/Network/Torrents" = {
-      device = "//192.168.1.50/Torrents";
+      device = "//192.168.2.10/Torrents";
       fsType = "cifs";
       options = options;
     };
     fileSystems."/home/twig/Network/Vault" = {
-      device = "//192.168.1.50/Vault";
+      device = "//192.168.2.10/Vault";
       fsType = "cifs";
       options = options;
     };
