@@ -10,7 +10,7 @@
     shell = pkgs.fish;
   };
 
-  users.users.mae` = {
+  users.users.mae = {
     isNormalUser = true;
     initialPassword = "password";
     extraGroups = [ "networkmanager" ];
