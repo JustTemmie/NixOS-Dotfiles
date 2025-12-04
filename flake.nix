@@ -27,6 +27,7 @@
           hardwareModule
 
           home-manager.nixosModules.home-manager
+          flatpaks.nixosModules.nix-flatpak
 
           {
             home-manager = {
