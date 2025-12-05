@@ -32,15 +32,19 @@
         user = "root";
       };
       "jellyfin" = {
-        hostname = "192.168.1.51";
+        hostname = "192.168.2.100";
         user = "root";
       };
       "qbittorrent" = {
-        hostname = "192.168.1.52";
+        hostname = "192.168.2.101";
         user = "root";
       };
       "copyparty" = {
-        hostname = "192.168.1.53";
+        hostname = "192.168.2.102";
+        user = "root";
+      };
+      "satisfactory" = {
+        hostname = "192.168.3.100";
         user = "root";
       };
       "jellyseerr" = {
