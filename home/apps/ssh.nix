@@ -45,7 +45,11 @@
       };
       "satisfactory" = {
         hostname = "192.168.3.100";
-        user = "root";
+        user = "twig";
+      };
+      "palworld" = {
+        hostname = "192.168.3.101";
+        user = "twig";
       };
       "jellyseerr" = {
         hostname = "192.168.1.30";
