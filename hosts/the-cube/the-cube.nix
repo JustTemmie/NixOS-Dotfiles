@@ -3,7 +3,6 @@
     (modulesPath + "/installer/scan/not-detected.nix")
 
     ./gpu.nix
-    ./ollama.nix
     ./vr.nix
   ];
 
