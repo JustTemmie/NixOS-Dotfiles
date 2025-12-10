@@ -3,7 +3,7 @@
     (modulesPath + "/installer/scan/not-detected.nix")
 
     ./gpu.nix
-    ./vr.nix
+    # ./vr.nix
   ];
 
   environment.systemPackages = [
