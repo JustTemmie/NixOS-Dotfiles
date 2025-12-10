@@ -52,6 +52,7 @@
       stable.lmms
       stable.tenacity
       stable.bambu-studio
+      stable.jetbrains.idea-community
     ];
 
     packagesMisc = with pkgs; [
@@ -67,7 +68,6 @@
 
     packagesProprietary = with pkgs; [
       geogebra
-#      jetbrains.idea-ultimate
     ];
   in
 {
