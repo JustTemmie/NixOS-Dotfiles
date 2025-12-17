@@ -15,8 +15,9 @@
         user = "temmie";
       };
       "minecraft" = {
-        hostname = "isak.beaver.mom";
-        user = "minecraft";
+        hostname = "bigti.me";
+        user = "root";
+        port = 1908;
       };
       "relay" = {
         hostname = "relay.beaver.mom";
@@ -29,6 +30,10 @@
       };
       "proxier" = {
         hostname = "192.168.1.3";
+        user = "root";
+      };
+      "jellyseerr" = {
+        hostname = "192.168.1.30";
         user = "root";
       };
       "jellyfin" = {
@@ -51,15 +56,6 @@
         hostname = "192.168.3.101";
         user = "twig";
       };
-      "jellyseerr" = {
-        hostname = "192.168.1.30";
-        user = "root";
-      };
-
-      # "satisfactory" = {
-      #   hostname = "192.168.1.40";
-      #   user = "steam";
-      # };
     };
   };
 }
