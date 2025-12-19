@@ -48,7 +48,7 @@
   networking = {
     interfaces.enp19s0 = {
       ipv4.addresses = [{ 
-        address = "192.168.1.50";
+        address = "192.168.1.20";
         prefixLength = 20;
       }];
     };
