@@ -34,7 +34,7 @@
       inkscape
       pavucontrol
       protonplus
-      ungoogled-chromium
+      # ungoogled-chromium
       baobab
       nautilus
       mission-center
