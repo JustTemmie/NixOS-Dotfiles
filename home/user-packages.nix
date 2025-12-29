@@ -52,7 +52,7 @@
       stable.lmms
       stable.tenacity
       stable.bambu-studio
-      stable.jetbrains.idea-community
+      stable.jetbrains.idea-oss
     ];
 
     packagesMisc = with pkgs; [
