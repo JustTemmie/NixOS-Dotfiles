@@ -1,5 +1,6 @@
 { pkgs, ... }: {
-  programs.vesktop.enable = true;
+  # moved to system app due to compilation issues
+  # programs.vesktop.enable = true;
 
   xdg.mimeApps = {
     enable = true;
