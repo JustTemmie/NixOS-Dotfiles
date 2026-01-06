@@ -20,10 +20,6 @@
       htop
     ];
 
-    packagesGraphicalUI = with pkgs; [
-      vesktop
-    ];
-
     packagesCompilersAndInterpreters = with pkgs; [
       libglvnd
       libglibutil
@@ -49,7 +45,6 @@
   environment.systemPackages =
     packagesCommandline ++
     packagesTerminalUI ++
-    packagesGraphicalUI ++
     packagesCompilersAndInterpreters ++
     packagesNix ++
     packagesSystem ++
