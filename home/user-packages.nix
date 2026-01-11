@@ -46,6 +46,7 @@
       signal-desktop
       bs-manager
       mpv
+      lutris
       
       stable.onlyoffice-desktopeditors
       stable.imv

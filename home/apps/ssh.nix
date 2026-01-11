@@ -24,6 +24,15 @@
         user = "root";
       };
 
+      "gpu" = {
+        hostname = "192.168.2.11";
+        user = "root";
+      };
+      "jellyfin" = {
+        hostname = "192.168.2.11";
+        user = "jellyfin";
+      };
+
       "caddy" = {
         hostname = "192.168.1.2";
         user = "root";
@@ -34,10 +43,6 @@
       };
       "jellyseerr" = {
         hostname = "192.168.1.30";
-        user = "root";
-      };
-      "jellyfin" = {
-        hostname = "192.168.2.100";
         user = "root";
       };
       "qbittorrent" = {

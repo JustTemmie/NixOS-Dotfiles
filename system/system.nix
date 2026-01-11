@@ -1,9 +1,6 @@
 { config, pkgs, ... }: {
   imports = [
-    ./apps/docker.nix
-    ./apps/steam.nix
-    ./apps/yazi.nix
-
+    ./environment/nix.nix
     ./environment/audio.nix
     ./environment/cosmic.nix
     ./environment/fonts.nix
@@ -12,9 +9,12 @@
     ./environment/locale.nix
     ./environment/networking.nix
     # ./environment/niri.nix
-    ./environment/nix.nix
     ./environment/samba.nix
     ./environment/users.nix
+
+    ./apps/docker.nix
+    ./apps/steam.nix
+    ./apps/yazi.nix
     
     ./system-packages.nix
   ];

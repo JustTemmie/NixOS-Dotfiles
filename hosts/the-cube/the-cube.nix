@@ -12,7 +12,6 @@
 
 
   myModules.samba.enable = true;
-  myModules.steam.enable = true;
 
   networking.hostName = "the-cube";
 

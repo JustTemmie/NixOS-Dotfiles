@@ -5,8 +5,6 @@
     ./graphics.nix
   ];
 
-  myModules.steam.enable = true;
-
   networking.hostName = "serenity";
   
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "usb_storage" "usbhid" "sd_mod" "sdhci_pci" ];
