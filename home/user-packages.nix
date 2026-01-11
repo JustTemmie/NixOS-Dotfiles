@@ -47,6 +47,7 @@
       bs-manager
       mpv
       lutris
+      rpcs3
       
       stable.onlyoffice-desktopeditors
       stable.imv
