@@ -47,8 +47,9 @@
       bs-manager
       mpv
       lutris
-      rpcs3
-      
+      qemu
+
+      stable.rpcs3
       stable.onlyoffice-desktopeditors
       stable.imv
       stable.lmms
