@@ -2,7 +2,7 @@
   imports = [
     ./apps/languages/python.nix
     ./apps/languages/c.nix
-    
+
     ./apps/codium.nix
     ./apps/firefox.nix
     ./apps/fish.nix

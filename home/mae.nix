@@ -6,7 +6,6 @@
     ./apps/kitty.nix
     ./apps/ncmpcpp.nix
     ./apps/prismlauncher.nix
-    ./apps/python.nix
     ./apps/rmpc.nix
     ./apps/vesktop.nix
 

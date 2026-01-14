@@ -13,6 +13,7 @@
       pciutils
       usbutils
       iptables
+      nix-your-shell
     ];
 
     packagesTerminalUI = with pkgs; [
