@@ -9,7 +9,7 @@
     ./environment/locale.nix
     ./environment/networking.nix
     # ./environment/niri.nix
-#    ./environment/samba.nix
+    ./environment/samba.nix
     ./environment/users.nix
 
     ./apps/docker.nix

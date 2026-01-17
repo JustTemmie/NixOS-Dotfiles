@@ -11,7 +11,7 @@
   ];
 
 
-  myModules.samba.enable = true;
+  myModules.samba.enable = false;
 
   networking.hostName = "the-cube";
 
