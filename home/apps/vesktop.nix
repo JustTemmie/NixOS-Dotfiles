@@ -1,9 +1,6 @@
 { pkgs, ... }: {
-  # programs.vesktop.enable = true;
-  home.packages = [
-    pkgs.stable.vesktop
-  ];
-
+  programs.vesktop.enable = true;
+  
   xdg.mimeApps = {
     enable = true;
     defaultApplications = {

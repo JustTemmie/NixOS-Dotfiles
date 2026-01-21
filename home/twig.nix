@@ -14,7 +14,6 @@
     ./apps/ssh.nix
     ./apps/vesktop.nix
 
-    # ./services/mpd-discord-rpc.nix steam presence
     ./services/mpd-scribble.nix
     ./services/mpd.nix
 

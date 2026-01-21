@@ -9,6 +9,7 @@
 
   programs.ssh = {
     enable = true;
+    enableDefaultConfig = false;
     matchBlocks = {
       "hetzner" = {
         hostname = "hetzner.beaver.mom";
@@ -27,10 +28,6 @@
       "gpu" = {
         hostname = "192.168.2.11";
         user = "root";
-      };
-      "jellyfin" = {
-        hostname = "192.168.2.11";
-        user = "jellyfin";
       };
 
       "caddy" = {
