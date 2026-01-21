@@ -45,18 +45,10 @@
   swapDevices = [ ];
 
   networking = {
-    interfaces.enp19s0 = {
-      ipv4.addresses = [{ 
-        address = "192.168.9.10";
-        prefixLength = 20;
-      }];
-    };
     defaultGateway = {
       address = "192.168.1.1";
       interface = "enp19s0";
     };
-
-    nameservers = [ "192.168.1.1" "9.9.9.9" ];
   };
 
   # This value determines the NixOS release from which the default
