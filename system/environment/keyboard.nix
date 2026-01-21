@@ -3,4 +3,6 @@
     layout = "us";
     variant = "colemak";
   };
+
+  console.useXkbConfig = true;
 }
