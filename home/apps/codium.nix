@@ -50,7 +50,7 @@
         };
         "editor.fontFamily" = "'Comic Code Ligatures', Regular";
         "editor.fontLigatures" = true;
-        "editor.tabSize": 2;
+        "editor.tabSize" = 2;
         "git.enableCommitSigning" = true;
         "git-graph.repository.sign.commits" = true;
         "git-graph.repository.sign.tags" = true;
