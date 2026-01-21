@@ -45,6 +45,7 @@
   swapDevices = [ ];
 
   networking = {
+    useDHCP = true;
     defaultGateway = {
       address = "192.168.1.1";
       interface = "enp19s0";
