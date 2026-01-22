@@ -58,6 +58,10 @@
         hostname = "192.168.3.101";
         user = "twig";
       };
+      "factorio" = {
+        hostname = "192.168.3.200";
+        user = "twig";
+      };
     };
   };
 }
