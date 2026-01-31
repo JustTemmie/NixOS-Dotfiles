@@ -42,7 +42,7 @@
       qbittorrent
       r2modman
       wireshark-qt
-      kdePackages.kdenlive
+      stable.kdePackages.kdenlive
       signal-desktop
       bs-manager
       mpv
