@@ -45,12 +45,17 @@
   swapDevices = [ ];
 
   networking = {
-    useDHCP = lib.mkDefault true;
+    interfaces.enp17s0 = {
+      useDHCP = lib.mkDefault true;
+    };
     defaultGateway = {
       address = "192.168.1.1";
-      interface = "enp19s0";
+      interface = "enp17s0";
     };
+
+    nameservers = [ "192.168.1.1" "9.9.9.9" ];
   };
+
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
