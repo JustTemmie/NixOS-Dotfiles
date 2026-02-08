@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
   home.packages = with pkgs; [
-    gcc
-    gnumake
+    (hiPrio gcc) # get the c++ binary from gcc, not clang
     clang
+    gnumake
   ];
 }
