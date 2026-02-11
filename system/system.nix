@@ -19,6 +19,7 @@
     ./system-packages.nix
   ];
 
+
   services.flatpak.enable = true;
   services.libinput.enable = true;
 
@@ -33,5 +34,7 @@
 
   programs.fish.enable = true; # i get issues if i don't enable this
   programs.nix-ld.enable = true; # enable system support for unpatched binaries
+
+  services.envfs.enable = true;
 }
 
