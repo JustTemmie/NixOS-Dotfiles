@@ -41,7 +41,6 @@
       obs-studio
       qbittorrent
       r2modman
-      wireshark-qt
       stable.kdePackages.kdenlive
       signal-desktop
       bs-manager

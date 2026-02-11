@@ -6,16 +6,16 @@
   nixpkgs.config.packageOverrides = pkgs: {
     steam = pkgs.steam.override {
       extraPkgs = pkgs: with pkgs; [
-        xorg.libXcursor
-        xorg.libXi
-        xorg.libXinerama
-        xorg.libXScrnSaver
+        libXcursor
+        libXi
+        libxinerama
+        libxscrnsaver
         libpng
         libpulseaudio
         libvorbis
         stdenv.cc.cc.lib
 
-        xorg.libxcb dbus nss # Needed for electron-based shit I think
+        libxcb dbus nss # Needed for electron-based shit I think
 
         # Needed for gamescope to work right
         libkrb5 keyutils
