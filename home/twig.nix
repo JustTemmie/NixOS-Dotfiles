@@ -8,6 +8,7 @@
     ./apps/fish.nix
     ./apps/git.nix
     ./apps/kitty.nix
+    ./apps/matrix.nix
     ./apps/ncmpcpp.nix
     ./apps/prismlauncher.nix
     ./apps/rmpc.nix

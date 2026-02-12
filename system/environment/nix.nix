@@ -6,6 +6,10 @@
     packageOverrides = pkgs: {
       stable = pkgs-stable;
     };
+
+    permittedInsecurePackages = [
+      "olm-3.2.16" # matrix
+    ];
   };
 
   nix.gc = {

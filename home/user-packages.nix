@@ -47,9 +47,6 @@
       mpv
       lutris
       qemu
-      element-web
-      fluffychat-linux
-      nheko
 
       stable.rpcs3
       stable.onlyoffice-desktopeditors
