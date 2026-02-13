@@ -28,10 +28,13 @@
     ];
 
     packagesGraphical = with pkgs; [
+      godot
+      godotPackages.export-template
       blender
       gimp
       krita
       inkscape
+
       pavucontrol
       protonplus
       # ungoogled-chromium
@@ -43,10 +46,9 @@
       r2modman
       stable.kdePackages.kdenlive
       signal-desktop
-      bs-manager
+      # bs-manager
       mpv
       lutris
-      qemu
 
       stable.rpcs3
       stable.onlyoffice-desktopeditors
