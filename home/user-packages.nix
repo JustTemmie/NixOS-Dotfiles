@@ -49,7 +49,7 @@
       # bs-manager
       mpv
       lutris
-      kdeconnect-kde
+      kdePackages.kdeconnect-kde
 
       stable.rpcs3
       stable.onlyoffice-desktopeditors
