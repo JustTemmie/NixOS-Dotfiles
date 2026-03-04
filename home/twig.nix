@@ -4,6 +4,7 @@
     ./apps/languages/c.nix
 
     ./apps/codium.nix
+    ./apps/cursor.nix
     ./apps/firefox.nix
     ./apps/fish.nix
     ./apps/git.nix
