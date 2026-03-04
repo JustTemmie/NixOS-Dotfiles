@@ -50,6 +50,7 @@
       mpv
       lutris
       kdePackages.kdeconnect-kde
+      blockbench
 
       stable.rpcs3
       stable.onlyoffice-desktopeditors
