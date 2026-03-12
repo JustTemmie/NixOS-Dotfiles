@@ -9,9 +9,14 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, ... } @ inputs:
+  outputs = { nixpkgs, nixpkgs-stable, ... } @ inputs:
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -25,8 +30,7 @@
           ./system/system.nix
           hardwareModule
 
-          home-manager.nixosModules.home-manager
-
+          inputs.home-manager.nixosModules.home-manager
           {
             home-manager = {
               useGlobalPkgs = true;
@@ -35,6 +39,12 @@
               users.twig = ./home/twig.nix;
               # users.mae = ./home/mae.nix;
             };
+          }
+          
+          inputs.nix-index-database.nixosModules.default
+          {
+            programs.nix-index.enable = true;
+            programs.nix-index-database.comma.enable = true;
           }
         ];
       };
