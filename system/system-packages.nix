@@ -25,7 +25,6 @@
       libglvnd
       libglibutil
       typescript
-      nodePackages.nodejs
       pnpm
     ];
 

@@ -1,24 +1,12 @@
-{ config, pkgs, ... }: {
+{ lib, config, pkgs, ... }: {
   imports = [
-    ./environment/nix.nix
-    ./environment/audio.nix
-    ./environment/cosmic.nix
-    ./environment/fonts.nix
-    # ./environment/kde.nix
-    ./environment/keyboard.nix
-    ./environment/locale.nix
-    ./environment/networking.nix
-    # ./environment/niri.nix
-    ./environment/samba.nix
-    ./environment/users.nix
-
-    ./apps/docker.nix
-    ./apps/steam.nix
-    ./apps/yazi.nix
-    
+    ./default.nix
     ./system-packages.nix
-  ];
 
+    ./core/fonts.nix
+    ./core/nix.nix
+    ./core/users.nix
+  ];
 
   services.flatpak.enable = true;
   services.libinput.enable = true;
@@ -27,7 +15,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # use latest kernel by default
-  boot.kernelPackages = pkgs.linuxPackages;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   programs.appimage.enable = true;
   programs.appimage.binfmt = true;

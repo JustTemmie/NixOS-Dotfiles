@@ -1,21 +1,7 @@
-{ modulesPath, config, lib, pkgs, ... }: {
+{ modulesPath, lib, config, pkgs, ... }: {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
-
-    ./gpu.nix
-    # ./vr.nix
   ];
-
-  environment.systemPackages = [
-    pkgs.sm64coopdx
-  ];
-
-
-  myModules.samba.enable = false;
-
-  networking.hostName = "the-cube";
-
-  boot.kernelPackages = lib.mkForce pkgs.linuxPackages_latest;
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
@@ -43,19 +29,6 @@
   };
 
   swapDevices = [ ];
-
-  networking = {
-    interfaces.enp17s0 = {
-      useDHCP = lib.mkDefault true;
-    };
-    defaultGateway = {
-      address = "192.168.1.1";
-      interface = "enp17s0";
-    };
-
-    nameservers = [ "192.168.1.1" "9.9.9.9" ];
-  };
-
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

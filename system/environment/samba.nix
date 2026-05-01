@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ lib, config, pkgs, ... }:
   let
     options = [
       "x-systemd.automount"
@@ -14,11 +14,7 @@
     ];
   in
 {
-  options = {
-    myModules.samba.enable = lib.mkEnableOption "Enable home samba shares";
-  };
-
-  config = lib.mkIf config.myModules.samba.enable {
+  config = lib.mkIf config.myModules.system.samba.enable {
     fileSystems."/home/twig/Documents" = {
       device = "//192.168.2.10/Documents";
       fsType = "cifs";

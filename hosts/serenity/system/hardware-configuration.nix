@@ -1,11 +1,7 @@
-{ modulesPath, config, lib, pkgs, ... }: {
+{ modulesPath, lib, config, pkgs, ... }: {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
-
-    ./graphics.nix
   ];
-
-  networking.hostName = "serenity";
   
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "usb_storage" "usbhid" "sd_mod" "sdhci_pci" ];
   boot.initrd.kernelModules = [ ];

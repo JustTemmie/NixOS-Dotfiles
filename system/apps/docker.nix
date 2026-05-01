@@ -1,4 +1,5 @@
-{ config, pkgs, ... }: {
+{ lib, config, pkgs, ... }: {
+  config = lib.mkIf config.myModules.system.docker.enable {
     virtualisation.docker = {
         enable = true;
 
@@ -11,4 +12,5 @@
     users.users.twig.extraGroups = [ "docker" ];
 
     environment.systemPackages = [ pkgs.docker ];
+  };
 }

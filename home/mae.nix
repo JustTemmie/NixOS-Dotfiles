@@ -1,21 +1,8 @@
-{ config, pkgs, lib, ... }: {
-  imports = [
-    ./apps/codium.nix
-    ./apps/firefox.nix
-    ./apps/fish.nix
-    ./apps/kitty.nix
-    ./apps/ncmpcpp.nix
-    ./apps/prismlauncher.nix
-    ./apps/rmpc.nix
-    ./apps/vesktop.nix
-
-    ./services/mpd.nix
-
-    ./user-packages.nix
-  ];
-
-  programs.home-manager.enable = true;
-
+{ lib, config, pkgs, ... }: {
+  myModules.home = {
+    
+  };
+  
   home = {
     packages = with pkgs; [
       git

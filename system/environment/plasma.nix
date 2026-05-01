@@ -1,11 +1,13 @@
-{ pkgs, ... }: {
-  services.desktopManager.plasma6.enable = true;
+{ lib, config, pkgs, ... }: {
+  config = lib.mkIf config.myModules.system.plasma.enable {
+    services.desktopManager.plasma6.enable = true;
 
-  # KDE Plasma in Wayland
-  services.displayManager.defaultSession = "plasma";
+    # KDE Plasma in Wayland
+    services.displayManager.defaultSession = "plasma";
 
-  environment.plasma6.excludePackages = with pkgs.kdePackages; [
-    oxygen
-    elisa
-  ];
+    environment.plasma6.excludePackages = with pkgs.kdePackages; [
+      oxygen
+      elisa
+    ];
+  };
 }

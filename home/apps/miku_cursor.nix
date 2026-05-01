@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: 
+{ lib, config, pkgs, ... }: 
 let 
   getFrom = url: hash: name: {
     gtk.enable = true;
@@ -21,21 +21,23 @@ let
     "miku-cursor-linux";
 in
 {
-  home.pointerCursor = cursorSettings;
+  config = lib.mkIf config.myModules.home.miku_cursor.enable {
+    home.pointerCursor = cursorSettings;
 
-  gtk = {
-    enable = true;
-    cursorTheme = {
-      name = cursorSettings.name;
-      package = cursorSettings.package;
-    };
-    gtk3.extraConfig = {
-      "gtk-cursor-theme-name" = cursorSettings.name;
-    };
-    gtk4.extraConfig = {
-      Settings = ''
-        gtk-cursor-theme-name=${cursorSettings.name}
-      '';
+    gtk = {
+      enable = true;
+      cursorTheme = {
+        name = cursorSettings.name;
+        package = cursorSettings.package;
+      };
+      gtk3.extraConfig = {
+        "gtk-cursor-theme-name" = cursorSettings.name;
+      };
+      gtk4.extraConfig = {
+        Settings = ''
+          gtk-cursor-theme-name=${cursorSettings.name}
+        '';
+      };
     };
   };
 }

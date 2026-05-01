@@ -1,23 +1,25 @@
-{ config, pkgs, ... }: {
-  programs.git = {
-    enable = true;
+{ lib, config, pkgs, ... }: {
+  config = lib.mkIf config.myModules.home.git.enable {
+    programs.git = {
+      enable = true;
 
-    signing = {
-      signByDefault = true;
-      format = "ssh";
-      key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINNd7ErkwCiFOOTU/imXWO/fbwJS6rSq5XJjplEK02Nm";
-    };
+      signing = {
+        signByDefault = true;
+        format = "ssh";
+        key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINNd7ErkwCiFOOTU/imXWO/fbwJS6rSq5XJjplEK02Nm";
+      };
 
-    settings = {
-      push.autoSetupRemove = true;
-      branch.autoSetupMerge = true;
-      init.defaultBranch = "main";
-      commit.gpgsign = true;
-      gpg.format = "ssh";
-      user = {
-        email = "git@beaver.mom";
-        name = "Twig";
-        signingkey = "/home/twig/.ssh/id_ed25519.pub";
+      settings = {
+        push.autoSetupRemove = true;
+        branch.autoSetupMerge = true;
+        init.defaultBranch = "main";
+        commit.gpgsign = true;
+        gpg.format = "ssh";
+        user = {
+          email = "git@beaver.mom";
+          name = "Twig";
+          signingkey = "/home/twig/.ssh/id_ed25519.pub";
+        };
       };
     };
   };
