@@ -29,7 +29,9 @@
               useUserPackages = true;
               extraSpecialArgs = { inherit inputs; };
               sharedModules = [ homeModule ];
-              users.twig = ./home/twig.nix;
+              users.twig = ./home/users/twig.nix;
+              users.mae = ./home/users/mae.nix;
+              users.gamer = ./home/users/gamer.nix;
             };
           }
           

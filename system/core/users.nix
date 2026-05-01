@@ -20,4 +20,15 @@
 
     shell = pkgs.fish;
   };
+
+  users.users.gamer = {
+    isNormalUser = true;
+    initialPassword = "password";
+    extraGroups = [ "networkmanager" ];
+    description = "gamer.";
+
+    uid = 1002;
+
+    shell = pkgs.fish;
+  };
 }
