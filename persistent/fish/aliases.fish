@@ -5,6 +5,16 @@ alias boobs="loginctl lock-session"
 
 abbr --add nr sudo nixos-rebuild
 
+function system-update
+    cd /etc/nixos
+    and sudo nix flake update
+    and git restore --staged .
+    and git add flake.lock
+    and git commit -m 'flake update'
+    and sudo nixos-rebuild boot
+    and git push
+end
+
 function gccr
 	if test (count $argv) -gt 0
 		set gccr_file $argv[1]
