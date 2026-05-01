@@ -11,11 +11,11 @@
 
   outputs = inputs @ { nixpkgs, nixpkgs-stable, ... }:
   let
-    system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
-    pkgs-stable = nixpkgs-stable.legacyPackages.${system};
-
-    mkPC = { hardwareModule, homeModule }:
+    mkSystem = { hardwareModule, homeModule, system }:
+      let
+        pkgs = nixpkgs.legacyPackages.${system};
+        pkgs-stable = nixpkgs-stable.legacyPackages.${system};
+      in
       nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; inherit pkgs-stable; };
@@ -42,13 +42,15 @@
       };
   in {
     nixosConfigurations = {
-      "the-cube" = mkPC {
+      "the-cube" = mkSystem {
         hardwareModule = ./hosts/the-cube/system/default.nix;
         homeModule = ./hosts/the-cube/home/default.nix;
+        system = "x86_64-linux";
       };
-      "serenity" = mkPC {
+      "serenity" = mkSystem {
         hardwareModule = ./hosts/serenity/system/default.nix;
         homeModule = ./hosts/serenity/home/default.nix;
+        system = "x86_64-linux";
       };
     };
   };
