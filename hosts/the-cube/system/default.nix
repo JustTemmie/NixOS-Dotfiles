@@ -15,7 +15,11 @@
 
   networking = {
     interfaces.enp17s0 = {
-      useDHCP = lib.mkDefault true;
+      ipv4.addresses = [{
+        address = "192.168.9.20"; 
+        prefixLength = 20;
+      }]
+      wakeOnLan.enable = true;
     };
     defaultGateway = {
       address = "192.168.1.1";

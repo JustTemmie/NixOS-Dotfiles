@@ -69,8 +69,8 @@
 
     packagesGaming = with pkgs; [
       r2modman
-      lutris
-      stable.rpcs3
+      # lutris
+      # stable.rpcs3
 
       wine
       winetricks
